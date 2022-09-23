@@ -13,11 +13,16 @@
     .red{
         color: red;
     }
+    .sm{
+        font-size: 10px;
+        color: gray;
+    }
 </style>
 
-# server_summary
+# **server_summary**
 Git 교과서 5장 서버 내용 요약 정리
 <hr>
+<br>
 
 # **서버 저장소란?**
     다른 말로는 원격 저장소라고도 하며, 로컬 즉, 사용자의 개인 pc와 같은 개인 저장소에 코드를 복제한 복제본이라고 할 수 있습니다.
@@ -32,6 +37,7 @@ Git 교과서 5장 서버 내용 요약 정리
 사무실 PC의 로컬 저장소에서 작업한 데이터를 서버 저장소에 저장하면, 개인PC 로컬 저장소에 다운로드 받아 연속적으로 작업을 이어갈 수 있습니다.
 > <span class="gray"> ※ 깃은 서버 저장소의 자료를 여러 각 로컬 저장소에 <span class="ul">복제</span>할 수 있습니다. 또한 자료가 저장된 여러 로컬 저장소들에서 자료를 추가로 작업한 후 다시 하나의 서버 저장소에 <span class="ul">통합</span>할 수 있습니다. </span><br>
 <img class="center" width="450px" src="https://wac-cdn.atlassian.com/dam/jcr:e5228129-76b1-4b2c-8f10-af789f2ea6c0/03.svg?cdnVersion=540">
+<span class="sm">출처: https://wac-cdn.atlassian.com</span>
 
 ### **새 멤버**
 기존 프로젝트에 새 멤버가 추가될 경우 <mark>해당 시점까지 작업한 소스코드의 최종 버전</mark>을 공유해야 하는데 이때, 깃의 <mark>원격 저장소 주소</mark>만 새 멤버에게 알려주면 별도로 파일을 보내줄 필요 없이 프로젝트의 이전 버전부터 최신 버전까지의 소스코드를 확인할 수 있습니다.
@@ -55,11 +61,24 @@ Git 교과서 5장 서버 내용 요약 정리
 
 **1. 특징**
 - 깃허브 계정 로그인 시 원격 저장소를 <span class="ul">무한</span>으로 생성할 수 있습니다.
-- 저장소 생성 시 해당 저장소의 관리자를 지정할 수 있습니다.
+- 저장소 생성 시 해당 저장소의 소유자를 지정할 수 있습니다.
 - 저장소 역할에 따라 <span class="ul">공개용</span> 또는 <span class="ul">비공개용</span>으로 설정하여 생성이 가능합니다.
-- 저장소의 이름은 <span class="red">중복</span>으로 생성할 수 없습니다.
+- 저장소의 이름은 중복으로 생성할 수 없습니다.
 - 저장소의 주소는 <span class="ul">github.com/사용자이름/저장소이름</span> 으로 생성됩니다.
 <br>
 
 **2. 생성 방법**
-- 깃허브 메인 홈페이지 우측 상단에 <mark>+ 버튼</mark>을 눌러 <mark>new repository</mark>로 생성할 수 있습니다.
+1. 깃허브 메인 홈페이지 우측 상단에 <mark>+ 버튼</mark>을 눌러 <mark>new repository</mark>로 생성 창으로 진입합니다.
+2. 서버 저장소의 <span class="ul">소유자</span>를 지정합니다.
+3. 저장소의 <span class="ul">이름</span>을 지정합니다.
+4. 해당 저장소에 대한 <span class="ul">설명</span>을 작성합니다.
+5. 저장소 <span class="ul">공개 방식</span>을 지정합니다.
+6. 저장소 특성에 따라 <span class="ul">추가 옵션</span>을 설정합니다.
+7. <span class="ul">"Create repository"</span> 버튼을 눌러 생성합니다.
+
+<br>
+
+# **깃허브 연동 및 원격 등록**
+    서버 저장소를 생성했다면 로컬 저장소와 연결해야합니다.
+
+### **로컬 저장소**
