@@ -130,11 +130,11 @@ Git 교과서 5장 서버 내용 요약 정리
 
 - ### **원격 저장소 이름(별칭) 출력 명령어**
     `$ git remote`<br>
-    >출력 내용<br>
+    ><출력 내용><br>
     >origin
 - ### **URL 까지 확인 시**
     `$ git remote -v`<br>
-    >출력 내용<br>
+    ><출력 내용><br>
     >origin https://github.com/소유자명/저장소명 (fetch)<br>
     >origin https://github.com/소유자명/저장소명 (push)
 
@@ -152,3 +152,8 @@ Git 교과서 5장 서버 내용 요약 정리
 
 <br>
 
+## **원격 저장소에 연결**
+- ### 원격 저장소 연결 시 add 옵션을 이용합니다.
+    `$ git remote add [원격저장소별칭] [원격저장소URL]`<br>
+    `-> $ git remote add origin https://github.com/opsos1/server_summary.git`<br>
+    [출력 내용](#url-까지-확인-시)
