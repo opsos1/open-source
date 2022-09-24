@@ -130,13 +130,13 @@ Git 교과서 5장 서버 내용 요약 정리
 
 - ### **원격 저장소 이름(별칭) 출력 명령어**
     `$ git remote`<br>
-    ><출력 내용><br>
+    ><출력 내용 - 별칭><br>
     >origin
 - ### **URL 까지 확인 시**
     `$ git remote -v`<br>
-    ><출력 내용><br>
-    >origin https://github.com/소유자명/저장소명 (fetch)<br>
-    >origin https://github.com/소유자명/저장소명 (push)
+    ><출력 내용 - 별칭, URL><br>
+    >`origin https://github.com/opsos1/server_summary.git (fetch)`<br>
+    >`origin https://github.com/opsos1/server_summary.git (push)`
 
 <br>
 
@@ -154,6 +154,33 @@ Git 교과서 5장 서버 내용 요약 정리
 
 ## **원격 저장소에 연결**
 - ### 원격 저장소 연결 시 add 옵션을 이용합니다.
-    `$ git remote add [원격저장소별칭] [원격저장소URL]`<br>
-    `-> $ git remote add origin https://github.com/opsos1/server_summary.git`<br>
-    [출력 내용](#url-까지-확인-시)
+    `임시 예) $ git remote add [원격저장소별칭] [원격저장소URL]`<br>
+    `실제 예) $ git remote add origin https://github.com/opsos1/server_summary.git`<br>
+    >[출력 예시 - 주소와 별칭](#url-까지-확인-시)
+- ### fetch, push 두 주소 출력
+    - push는 서버로 전송하는 동작
+    - fetch는 반대로 서버에서 가지고오는 동작
+
+<br>
+
+## **소스트리에서 원격 브랜치**
+원격 저장소 등록 시 [master] 브랜치와 [원격] 브랜치가 생성됩니다.<br>
+로컬 저장소와 서버 저장소를 구분하여 표시한 것으로 서로 동기화한 시점을 판별할 수 있습니다.
+
+<br>
+
+## **별칭 이름 변경과 정보**
+- 별칭 변경 방법<br>
+`임시 예) $ git remote rename 변경전 변경후`<br>
+`실제 예) $ git remote rename origin org`
+- 원격 저장소에 관한 상세한 정보를 보는 방법<br>
+`$ git remote show 별칭`
+    ><출력 내용>
+    >- 별칭
+    >- `Fetch URL` - 원격 저장소 주소
+    >- `Push URL` - 원격 저장소 주소
+    >- `HEAD branch` - 주 브랜치명
+    >- `Remote branch` - 연결된 브랜치명
+    >- `Local ref configured for 'git push'` - push 상태
+
+
