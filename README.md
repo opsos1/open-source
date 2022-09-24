@@ -130,10 +130,11 @@ Git 교과서 5장 서버 내용 요약 정리
 
 ### 원격 저장소 이름(별칭) 출력 명령어
 `$ git remote`<br>
-출력 내용 : origin
+>출력 내용<br>
+>origin
 ### URL 까지 확인 시
 `$ git remote -v`<br>
-출력 내용 :
-origin https://github.com/이름/저장소명 (fetch)<br>
-origin https://github.com/이름/저장소명 (push)
+>출력 내용<br>
+>origin https://github.com/이름/저장소명 (fetch)<br>
+>origin https://github.com/이름/저장소명 (push)
 
