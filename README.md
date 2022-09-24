@@ -70,16 +70,16 @@ Git 교과서 5장 서버 내용 요약 정리
 
 - ### **로컬 저장소 생성** <span style="font-size:10px; color:gray;">(Git 터미널이 실행된 상태)</span>
     1. 로컬 저장소로 사용할 폴더를 생성합니다.<br>
-    `cd [작업폴더 상위주소]` <span style="color:gray;">- 로컬 저장소(폴더)를 만들 상위 폴더로 이동</span><br>
-    `git init [로컬 저장소명]` <span style="color:gray;">- [로컬 저장소명]과 같은 이름의 폴더가 없다면 생성 후 그 저장소를 git에 연동시켜 로컬 저장소로 만듭니다.</span><br>
-    `cd [로컬 저장소명]` <span style="color:gray;">- 생성한 로컬 저장소로 이동</span><br>
+    `$ cd [작업폴더 상위주소]` <span style="color:gray;">- 로컬 저장소(폴더)를 만들 상위 폴더로 이동</span><br>
+    `$ git init [로컬 저장소명]` <span style="color:gray;">- [로컬 저장소명]과 같은 이름의 폴더가 없다면 생성 후 그 저장소를 git에 연동시켜 로컬 저장소로 만듭니다.</span><br>
+    `$ cd [로컬 저장소명]` <span style="color:gray;">- 생성한 로컬 저장소로 이동</span><br>
     ><span style="color:gray;">위 내용을 정상적으로 실행한 경우 터미널 입력창에 <u>branch명</u>이 표시됩니다.</span><br>
     >
     2. 파일을 하나 생성합니다.<br>
-    `echo 'hello world' >> README.md`<br>
+    `$ echo 'hello world' >> README.md`<br>
     3. 스테이지에 등록하고 커밋합니다.<br>
-    `git add` <span style="color:gray;">- 스테이지 등록</span><br>
-    `git commit -m "commit message"` <span style="color:gray;">- 커밋</span>
+    `$ git add` <span style="color:gray;">- 스테이지 등록</span><br>
+    `$ git commit -m "commit message"` <span style="color:gray;">- 커밋</span>
 
 ## **프로토콜**
 서버 통신을 위해 프로토콜을 사용해야하며,
@@ -129,14 +129,14 @@ Git 교과서 5장 서버 내용 요약 정리
 ><span style="color: gray">※ 연결된 원격 저장소가 없는 경우 출력되지 않습니다. </span>
 
 - ### **원격 저장소 이름(별칭) 출력 명령어**
+    <별칭 출력><br>
     `$ git remote`<br>
-    ><출력 내용 - 별칭><br>
-    >origin
+    -> origin
 - ### **URL 까지 확인 시**
+    <출력 내용 - 별칭, URL><br>
     `$ git remote -v`<br>
-    ><출력 내용 - 별칭, URL><br>
-    >`origin https://github.com/opsos1/server_summary.git (fetch)`<br>
-    >`origin https://github.com/opsos1/server_summary.git (push)`
+    -> origin https://github.com/opsos1/server_summary.git (fetch)<br>
+    -> origin https://github.com/opsos1/server_summary.git (push)
 
 <br>
 
@@ -175,12 +175,22 @@ Git 교과서 5장 서버 내용 요약 정리
 `실제 예) $ git remote rename origin org`
 - 원격 저장소에 관한 상세한 정보를 보는 방법<br>
 `$ git remote show 별칭`
-    ><출력 내용>
-    >- 별칭
-    >- `Fetch URL` - 원격 저장소 주소
-    >- `Push URL` - 원격 저장소 주소
-    >- `HEAD branch` - 주 브랜치명
-    >- `Remote branch` - 연결된 브랜치명
-    >- `Local ref configured for 'git push'` - push 상태
+    <출력 내용>
+    - 별칭
+    - `Fetch URL` - 원격 저장소 주소
+    - `Push URL` - 원격 저장소 주소
+    - `HEAD branch` - 주 브랜치명
+    - `Remote branch` - 연결된 브랜치명
+    - `Local ref configured for 'git push'` - push 상태
 
+<br>
 
+## **원격 서버 삭제**
+`$ git remote rm origin(별칭)`
+- 삭제 전 상태<br>
+    - origin https://github.com/opsos1/server_summary.git (fetch)<br>
+    - origin https://github.com/opsos1/server_summary.git (push)
+- 삭제 후 상태<br>
+    - \-
+> ※ 삭제한 별칭의 fetch와 push 모두 삭제된 것을 확인할 수 있습니다.<br>
+> ※ $ git remote -v 로 확인한 상태 결과입니다.
