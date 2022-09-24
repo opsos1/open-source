@@ -1,21 +1,5 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<style type="text/css">
-    .gray{
-        color: gray;
-    }
-    .center{
-        text-align: center;
-    }
-    .red{
-        color: red;
-    }
-    .sm{
-        font-size: 10px;
-        color: gray;
-    }
-</style>
-
 # **server_summary**
 Git 교과서 5장 서버 내용 요약 정리
 <hr>
@@ -27,19 +11,19 @@ Git 교과서 5장 서버 내용 요약 정리
 
 ### **협업 저장소란?**
 깃은 규모가 큰 프로젝트들을 효율적이고, 높은 품질로 개발하기 위해 여러 개발자들이 <mark>협업할 수 있도록 만들어진 도구</mark>이고, 그렇기 때문에 협업을 위해 만들어진 <mark>깃 서버 저장소</mark>를 협업 저장소라고 합니다.<br>
-><span class="gray">※ 원활한 협업을 위해 깃에서는 각 개발자들이 네트워크로부터  자유로운 환경에서 프로젝트를 이어나갈 수 있도록 <u>로컬 저장소</u>와 <u>서버 저장소</u>를 분리하는 방식을 채택하였습니다.</span>
+><span style="color:gray">※ 원활한 협업을 위해 깃에서는 각 개발자들이 네트워크로부터  자유로운 환경에서 프로젝트를 이어나갈 수 있도록 <u>로컬 저장소</u>와 <u>서버 저장소</u>를 분리하는 방식을 채택하였습니다.</span>
 
 <br>
 
 ### **연속된 작업**
 사무실 PC의 로컬 저장소에서 작업한 데이터를 서버 저장소에 저장하면, 개인PC 로컬 저장소에 다운로드 받아 연속적으로 작업을 이어갈 수 있습니다.
-> <span class="gray"> ※ 깃은 서버 저장소의 자료를 여러 각 로컬 저장소에 <u>복제</u>할 수 있습니다. 또한 자료가 저장된 여러 로컬 저장소들에서 자료를 추가로 작업한 후 다시 하나의 서버 저장소에 <u>통합</u>할 수 있습니다. </span><br>
-<img class="center" width="450px" src="https://wac-cdn.atlassian.com/dam/jcr:e5228129-76b1-4b2c-8f10-af789f2ea6c0/03.svg?cdnVersion=540">
-<span class="sm">출처: https://wac-cdn.atlassian.com</span>
+> <span style="color:gray"> ※ 깃은 서버 저장소의 자료를 여러 각 로컬 저장소에 <u>복제</u>할 수 있습니다. 또한 자료가 저장된 여러 로컬 저장소들에서 자료를 추가로 작업한 후 다시 하나의 서버 저장소에 <u>통합</u>할 수 있습니다. </span><br>
+<img style="text-align: center" width="450px" src="https://wac-cdn.atlassian.com/dam/jcr:e5228129-76b1-4b2c-8f10-af789f2ea6c0/03.svg?cdnVersion=540">
+<span style="font-size:10px; color:gray">출처: https://wac-cdn.atlassian.com</span>
 
 ### **새 멤버**
 기존 프로젝트에 새 멤버가 추가될 경우 <mark>해당 시점까지 작업한 소스코드의 최종 버전</mark>을 공유해야 하는데 이때, 깃의 <mark>원격 저장소 주소</mark>만 새 멤버에게 알려주면 별도로 파일을 보내줄 필요 없이 프로젝트의 이전 버전부터 최신 버전까지의 소스코드를 확인할 수 있습니다.
-><span class="gray">※ 깃 서버 저장소를 통해 프로젝트에 참여한 모든 구성원에게 코드의 최종 결과물을 동기화할 수 있습니다.</span>
+><span style="color:gray">※ 깃 서버 저장소를 통해 프로젝트에 참여한 모든 구성원에게 코드의 최종 결과물을 동기화할 수 있습니다.</span>
 
 <br>
 
@@ -84,12 +68,12 @@ Git 교과서 5장 서버 내용 요약 정리
 > 1. 새로운 로컬 저장소를 만들고, 이 저장소에 원격 저장소를 연결<br>
 > 2. 기존 로컬 저장소를 원격 저장소에 연결
 
-> #### **로컬 저장소 생성** <span class="sm">(Git 터미널이 실행된 상태)</span>
+> #### **로컬 저장소 생성** <span style="font-size:10px; color:gray">(Git 터미널이 실행된 상태)</span>
 >1. 로컬 저장소로 사용할 폴더를 생성합니다.<br>
-| cd [작업폴더 상위주소] <span class="gray">- 로컬 저장소(폴더)를 만들 상위 폴더로 이동</span><br>
-| git init [로컬 저장소명] <span class="gray">- [로컬 저장소명]과 같은 이름의 폴더가 없다면 생성 후 그 저장소를 git에 연동시켜 로컬 저장소로 만듭니다.</span><br>
-| cd [로컬 저장소명] <span class="gray">- 생성한 로컬 저장소로 이동</span><br>
->><span class="gray">위 내용을 정상적으로 실행한 경우 터미널 입력창에 <span class="ul">branch명</span>이 표시됩니다.</span><br>
+| cd [작업폴더 상위주소] <span style="color:gray">- 로컬 저장소(폴더)를 만들 상위 폴더로 이동</span><br>
+| git init [로컬 저장소명] <span style="color:gray">- [로컬 저장소명]과 같은 이름의 폴더가 없다면 생성 후 그 저장소를 git에 연동시켜 로컬 저장소로 만듭니다.</span><br>
+| cd [로컬 저장소명] <span style="color:gray">- 생성한 로컬 저장소로 이동</span><br>
+>><span style="color:gray">위 내용을 정상적으로 실행한 경우 터미널 입력창에 <span class="ul">branch명</span>이 표시됩니다.</span><br>
 >
 >2. 파일을 하나 생성합니다.<br>
 >| echo 'hello world' >> README.md<br>
