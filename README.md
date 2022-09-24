@@ -18,7 +18,7 @@ Git 교과서 5장 서버 내용 요약 정리
 ## **연속된 작업**
 사무실 PC의 로컬 저장소에서 작업한 데이터를 서버 저장소에 저장하면, 개인PC 로컬 저장소에 다운로드 받아 연속적으로 작업을 이어갈 수 있습니다.
 > <span style="color:gray"> ※ 깃은 서버 저장소의 자료를 여러 각 로컬 저장소에 <u>복제</u>할 수 있습니다. 또한 자료가 저장된 여러 로컬 저장소들에서 자료를 추가로 작업한 후 다시 하나의 서버 저장소에 <u>통합</u>할 수 있습니다. </span><br>
-<img style="text-align: center" width="450px" src="https://wac-cdn.atlassian.com/dam/jcr:e5228129-76b1-4b2c-8f10-af789f2ea6c0/03.svg?cdnVersion=540">
+<img style="text-align: center" width="450px" src="https://wac-cdn.atlassian.com/dam/jcr:e5228129-76b1-4b2c-8f10-af789f2ea6c0/03.svg?cdnVersion=540"><br>
 <span style="font-size:10px; color:gray;">출처: https://wac-cdn.atlassian.com</span>
 
 ## **새 멤버**
@@ -87,7 +87,7 @@ Git 교과서 5장 서버 내용 요약 정리
 - ### **Local(로컬)**<br>
     - 자신의 컴퓨터를 서버로 이용할 때 편리하며, 일반PC(로컬)에 원격 저장소를 생성하는 것을 의미합니다.<br>
 
-    `$ git remote add 원격저장소별칭 폴더경로`
+    `$ git remote add [원격저장소별칭] [폴더경로]`
     ><span style="color:gray">※ 간단하게 서버를 구축할 수 있고, 빠른 동작이 가능하다는 장점이 있지만,<br>
     모든 자료가 자신의 컴퓨터에 집중되는 위험도 있습니다.</span>
 
@@ -124,16 +124,16 @@ Git 교과서 5장 서버 내용 요약 정리
     - 잘 사용하지 않습니다.
 
 ## **원격 저장소의 리모트 목록 관리**
-    원격 저장소 관리 시 remote 명령어를 사용하여 저장소 목록 확인, 등록, 취소 작업이 가능합니다.
+원격 저장소 관리 시 remote 명령어를 사용하여 저장소 목록 확인, 등록, 취소 작업이 가능합니다.
 ><span style="color: gray">※ remote 명령에 -help 옵션 사용 시 remote의 여러 옵션을 확인할 수 있습니다.</span><br>
 ><span style="color: gray">※ 연결된 원격 저장소가 없는 경우 출력되지 않습니다. </span>
 
 - ### **원격 저장소 이름(별칭) 출력 명령어**
-    <별칭 출력><br>
+    <원격저장소별칭 출력><br>
     `$ git remote`<br>
     -> origin
 - ### **URL 까지 확인 시**
-    <출력 내용 - 별칭, URL><br>
+    <출력 내용 - 원격저장소별칭, URL><br>
     `$ git remote -v`<br>
     -> origin https://github.com/opsos1/server_summary.git (fetch)<br>
     -> origin https://github.com/opsos1/server_summary.git (push)
@@ -143,7 +143,7 @@ Git 교과서 5장 서버 내용 요약 정리
 ## **주소와 별칭**
 로컬 저장소에 원격 저장소(서버) 등록시 서버 주소가 필요하며,
 프로토콜 + 도메인 주소 형태로 된 것을 확인할 수 있습니다.
-- ### **별칭**
+- ### **원격저장소별칭**
     - 원격 서버 주소는 긴 문자열로 되어있습니다.<br>
     - 이 긴 문자열을 별칭으로 만들어 편하게 사용할 수 있습니다.
 - ### **origin**
@@ -164,8 +164,9 @@ Git 교과서 5장 서버 내용 요약 정리
 <br>
 
 ## **소스트리에서 원격 브랜치**
-원격 저장소 등록 시 [master] 브랜치와 [원격] 브랜치가 생성됩니다.<br>
+원격 저장소 등록 시 [main] 브랜치와 [원격] 브랜치가 생성됩니다.<br>
 로컬 저장소와 서버 저장소를 구분하여 표시한 것으로 서로 동기화한 시점을 판별할 수 있습니다.
+>기본 branch명을 main으로 바꾸지 않았다면 main이 아닌 master 브랜치가 생성됩니다.
 
 <br>
 
@@ -174,9 +175,9 @@ Git 교과서 5장 서버 내용 요약 정리
 `임시 예) $ git remote rename 변경전 변경후`<br>
 `실제 예) $ git remote rename origin org`
 - 원격 저장소에 관한 상세한 정보를 보는 방법<br>
-`$ git remote show 별칭`
+`$ git remote show 원격저장소별칭`
     <출력 내용>
-    - 별칭
+    - 원격저장소별칭
     - `Fetch URL` - 원격 저장소 주소
     - `Push URL` - 원격 저장소 주소
     - `HEAD branch` - 주 브랜치명
@@ -186,7 +187,7 @@ Git 교과서 5장 서버 내용 요약 정리
 <br>
 
 ## **원격 서버 삭제**
-`$ git remote rm origin(별칭)`
+`$ git remote rm origin(원격저장소별칭)`
 - 삭제 전 상태<br>
     - origin https://github.com/opsos1/server_summary.git (fetch)<br>
     - origin https://github.com/opsos1/server_summary.git (push)
@@ -194,3 +195,17 @@ Git 교과서 5장 서버 내용 요약 정리
     - \-
 > ※ 삭제한 별칭의 fetch와 push 모두 삭제된 것을 확인할 수 있습니다.<br>
 > ※ $ git remote -v 로 확인한 상태 결과입니다.
+
+<br>
+
+# :postbox:**서버 전송**
+    서버와 연결했다면 PC에서 작업한 파일을 서버로 업로드할 수 있습니다.
+
+## **push: 서버에 전송**
+push 명령을 사용해 원격저장소에 업로드할 수 있습니다.<br>
+
+`$ git push origin(원격저장소별칭) main(브랜치이름)`
+
+>※ 꼭 add, commit이 된 상태여야 합니다.<br>
+>※ 업로드 시 깃허브에서 확인할 수 있습니다.<br>
+>※ 협업 목적이 아니라도 개인 저장소 백업 목적으로도 사용 가능합니다.
