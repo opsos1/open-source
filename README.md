@@ -1,5 +1,3 @@
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 # **server_summary**
 Git 교과서 5장 서버 내용 요약 정리
 <hr>
