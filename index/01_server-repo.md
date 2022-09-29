@@ -11,8 +11,8 @@
 ## **연속된 작업**
 사무실 PC의 로컬저장소에서 작업한 데이터를 서버 저장소에 저장하면, 개인 PC 로컬저장소에 다운로드해 연속적으로 작업을 이어갈 수 있습니다.
 >  ※ 깃은 서버 저장소의 자료를 여러 각 로컬저장소에 복제할 수 있습니다. 또한 자료가 저장된 여러 로컬저장소들에서 자료를 추가로 작업한 후 다시 하나의 서버 저장소에 통합할 수 있습니다. <br>
-<img style="text-align: center" width="450px" src="https://wac-cdn.atlassian.com/dam/jcr:e5228129-76b1-4b2c-8f10-af789f2ea6c0/03.svg?cdnVersion=540"><br>
-출처: https://wac-cdn.atlassian.com
+<center><img width="450px" src="https://wac-cdn.atlassian.com/dam/jcr:e5228129-76b1-4b2c-8f10-af789f2ea6c0/03.svg?cdnVersion=540"></center><br>
+[출처](/index/08_source.md/###)
 
 ## **새 멤버**
 기존 프로젝트에 새 멤버가 추가될 경우 해당 시점까지 작업한 소스코드의 최종 버전을 공유해야 하는데 이때, 깃의 원격저장소 주소만 새 멤버에게 알려주면 별도로 파일을 보내줄 필요 없이 프로젝트의 이전 버전부터 최신 버전까지의 소스코드를 확인할 수 있습니다.
