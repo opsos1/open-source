@@ -61,7 +61,7 @@
 
 <br>
 
-[다음으로 이동](/index/02_server-ready.md)
+[다음으로 이동](/index/03_link-remote.md)
 
 <br>
 
