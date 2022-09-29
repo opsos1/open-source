@@ -4,7 +4,7 @@
 ## **push: 서버에 전송**
 - ### push 명령을 사용해 원격저장소에 업로드할 수 있습니다.<br>
 
-`$ git push origin(원격저장소별칭) main(브랜치이름)`
+`$ git push origin(원격저장소 별칭) main(브랜치 이름)`
 
 >※ 꼭 add, commit이 된 상태여야 합니다.<br>
 >※ 업로드 시 깃허브에서 확인할 수 있습니다.<br>
