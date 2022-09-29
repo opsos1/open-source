@@ -15,34 +15,47 @@
 >서버 저장소(원격저장소) 생성에 관련된 내용입니다.
 
 **1. 깃허브 메인 홈페이지 우측 상단에 + 버튼을 눌러 new repository로 생성 창으로 진입합니다.**<br>
-![Untitled-1](https://user-images.githubusercontent.com/45596014/193051781-80b82c60-1940-45fb-9419-ce0c5b57860e.jpg)
+<kbd>
+    ![Untitled-1](https://user-images.githubusercontent.com/45596014/193051781-80b82c60-1940-45fb-9419-ce0c5b57860e.jpg)
+</kbd>
 
 <br>
 
 **2. 서버 저장소의 소유자 및 저장소 이름을 지정합니다.**<br>
-![Untitled-1](https://user-images.githubusercontent.com/45596014/193050451-d76a0abf-27f4-4bd7-b1ab-e5e214463b92.jpg)
+<kbd>
+    ![Untitled-1](https://user-images.githubusercontent.com/45596014/193050451-d76a0abf-27f4-4bd7-b1ab-e5e214463b92.jpg)
+</kbd>
 >※ 저장소의 이름은 중복으로 생성할 수 없습니다.
 
 <br>
 
 **3. 해당 저장소에 대한 설명을 작성합니다.**<br>
-![Untitled-1](https://user-images.githubusercontent.com/45596014/193048451-9819ac81-b0a8-4d1d-b97c-84398633b4a5.jpg)
+<kbd>
+    ![Untitled-1](https://user-images.githubusercontent.com/45596014/193048451-9819ac81-b0a8-4d1d-b97c-84398633b4a5.jpg)
+</kbd>
 
 <br>
 
 **4. 저장소 공개 방식을 지정합니다.**<br>
-![Untitled-1](https://user-images.githubusercontent.com/45596014/193050059-7bb3dadb-0550-41d6-afce-2f788c2e7111.jpg)
+<kbd>
+    ![Untitled-1](https://user-images.githubusercontent.com/45596014/193050059-7bb3dadb-0550-41d6-afce-2f788c2e7111.jpg)
+</kbd>
 >※ 공개 시 다른 사용자들도 해당 원격저장소의 코드를 확인할 수 있으며,<br>
 >※ 비공개 시에는 소유자를 비롯한 권한이 있는 사용자만 열람할 수 있습니다.
 
 <br>
 
 **5. 저장소 특성에 따라 추가 옵션을 설정합니다.**<br>
-![Untitled-1](https://user-images.githubusercontent.com/45596014/193049783-11cdf10c-5c6f-4eb1-9f07-b185ff47507d.jpg)
+<kbd>
+    ![Untitled-1](https://user-images.githubusercontent.com/45596014/193049783-11cdf10c-5c6f-4eb1-9f07-b185ff47507d.jpg)
+</kbd>
 
 <br>
 
 **6. "Create repository" 버튼을 눌러 생성합니다.**<br>
+<kbd>
+    ![Untitled-1](https://user-images.githubusercontent.com/45596014/193056984-f8d08228-1f84-42cc-a7b4-d6e7de1e7444.jpg)
+</kbd>
 >※ 깃허브 계정이 존재할 경우 원격저장소를 무한히 생성할 수 있습니다.<br>
 >※ 저장소의 주소는 **`github.com/사용자이름/저장소이름`** 으로 생성됩니다.
 
