@@ -21,12 +21,23 @@
 <br>
 
 - ### **2. 생성 방법**
-    1. 깃허브 메인 홈페이지 우측 상단에 + 버튼을 눌러 new repository로 생성 창으로 진입합니다.
-    2. 서버 저장소의 소유자를 지정합니다.
-    3. 저장소의 이름을 지정합니다.
-    4. 해당 저장소에 대한 설명을 작성합니다.
-    5. 저장소 공개 방식을 지정합니다.
-    6. 저장소 특성에 따라 추가 옵션을 설정합니다.
-    7. "Create repository" 버튼을 눌러 생성합니다.
+    1. 깃허브 메인 홈페이지 우측 상단에 + 버튼을 눌러 new repository로 생성 창으로 진입합니다.<br>
+    ![new repository](https://user-images.githubusercontent.com/45596014/193033455-4c1e10ca-ef5d-4d94-9900-1a8b6ff7f7ab.jpg)
+    <br><br>
+    2. 서버 저장소의 소유자 및 저장소 이름을 지정합니다.<br><br>
+    ![Untitled-1](https://user-images.githubusercontent.com/45596014/193050451-d76a0abf-27f4-4bd7-b1ab-e5e214463b92.jpg)
+    <br><br>
+    3. 해당 저장소에 대한 설명을 작성합니다.<br><br>
+    ![Untitled-1](https://user-images.githubusercontent.com/45596014/193048451-9819ac81-b0a8-4d1d-b97c-84398633b4a5.jpg)
+    <br><br>
+    4. 저장소 공개 방식을 지정합니다.<br><br>
+    ![Untitled-1](https://user-images.githubusercontent.com/45596014/193050059-7bb3dadb-0550-41d6-afce-2f788c2e7111.jpg)
+    <br><br>
+    5. 저장소 특성에 따라 추가 옵션을 설정합니다.<br><br>
+    ![Untitled-1](https://user-images.githubusercontent.com/45596014/193049783-11cdf10c-5c6f-4eb1-9f07-b185ff47507d.jpg)
+    <br><br>
+    6. "Create repository" 버튼을 눌러 생성합니다.<br><br>
+
+    <br><br>
 
 <br>

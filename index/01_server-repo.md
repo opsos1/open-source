@@ -11,7 +11,7 @@
 ## **연속된 작업**
 사무실 PC의 로컬저장소에서 작업한 데이터를 서버 저장소에 저장하면, 개인 PC 로컬저장소에 다운로드해 연속적으로 작업을 이어갈 수 있습니다.
 >  ※ 깃은 서버 저장소의 자료를 여러 각 로컬저장소에 복제할 수 있습니다. 또한 자료가 저장된 여러 로컬저장소들에서 자료를 추가로 작업한 후 다시 하나의 서버 저장소에 통합할 수 있습니다. <br>
-<p align="center" style="text-align: center"><img width="450px" src="https://wac-cdn.atlassian.com/dam/jcr:e5228129-76b1-4b2c-8f10-af789f2ea6c0/03.svg?cdnVersion=540"></p><br>
+<img width="450px" src="https://wac-cdn.atlassian.com/dam/jcr:e5228129-76b1-4b2c-8f10-af789f2ea6c0/03.svg?cdnVersion=540"><br>
 [출처](/index/08_source.md/###)
 
 ## **새 멤버**
