@@ -65,8 +65,9 @@
 원격저장소 관리 시 remote 명령어를 사용하여 저장소 목록 확인, 등록, 취소 작업이 가능합니다.
 >※ remote 명령에 -help 옵션 사용 시 remote의 여러 옵션을 확인할 수 있습니다.<br>
 >※ 연결된 원격저장소가 없는 경우 출력되지 않습니다. 
-
+<kbd>
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/45596014/193244066-b55d91c7-bd3b-44fc-8bb1-d1dfc26736ee.png">
+</kbd>
 
 - ### **원격저장소 이름(별칭) 출력 명령어**
     <원격저장소별칭 출력><br>
@@ -75,7 +76,9 @@
 - ### **URL까지 확인 시**
     <출력 내용 - 원격저장소별칭, URL><br>
     `$ git remote -v` <br>
+    <kbd>
     <img width="478" alt="image" src="https://user-images.githubusercontent.com/45596014/193245734-fc7d1884-a77f-46a1-82fc-613c6853c398.png">
+    </kbd>
 
 <br>
 
