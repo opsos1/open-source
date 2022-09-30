@@ -1,23 +1,32 @@
 # **:link:깃허브 연동 및 원격 등록**
-    서버 저장소를 생성했다면 로컬저장소와 연결해야 합니다.
+```
+서버 저장소를 생성했다면 로컬저장소와 연결해야 합니다.
+```
 
 ## **로컬저장소**
 - ### **저장소를 연결하는 방식으로 두 가지가 있습니다.**<br>
     1. 새로운 로컬저장소를 만들고, 이 저장소에 원격저장소를 연결<br>
     2. 기존 로컬저장소를 원격저장소에 연결
 
+
 - ### **로컬저장소 생성** (Git 터미널이 실행된 상태)
     1. 로컬저장소로 사용할 폴더를 생성합니다.<br>
-    `$ cd [작업 폴더 상위 주소]` - 로컬저장소(폴더)를 만들 상위 폴더로 이동<br>
-    `$ git init [로컬저장소명]` - [로컬저장소명]과 같은 이름의 폴더가 없다면 생성 후 그 저장소를 git에 연동시켜 로컬저장소로 만듭니다.<br>
-    `$ cd [로컬저장소명]` - 생성한 로컬저장소로 이동<br>
+        ```bash
+        $ cd [작업 폴더 상위 주소] # 로컬저장소(폴더)를 만들 상위 폴더로 이동
+        $ git init [로컬저장소명] # 현재 위치한 주소에 새 파일 생성
+        $ cd [로컬저장소명] # 생성한 로컬저장소로 이동
+        ```
     >위 내용을 정상적으로 실행한 경우 터미널 입력창에 branch명이 표시됩니다.<br>
-    >
-    2. 파일을 하나 생성합니다.<br>
-    `$ echo 'hello world' >> README.md`<br>
+    
+    2. 마크다운 파일을 하나 생성합니다.<br>
+        ```bash
+        $ echo 'hello world' >> README.md # EADME 마크다운 파일 생성
+        ```
     3. 스테이지에 등록하고 커밋 합니다.<br>
-    `$ git add` - 스테이지 등록<br>
-    `$ git commit -m "commit message"` - 커밋
+        ```bash
+        $ git add # 스테이지
+        $ git commit -m "commit message" # 저장소
+        ```
 
 ## **프로토콜**
 서버 통신을 위해 프로토콜을 사용해야 하며,
@@ -70,18 +79,23 @@
 </kbd>
 
 - ### **원격저장소 이름(별칭) 출력 명령어**
-    `$ git remote`<br><br>
+    ```bash
+    $ git remote
+    ```
     <kbd>
-    <image width="250" src="https://user-images.githubusercontent.com/45596014/193247683-5763e1b4-c21f-4eff-b80f-b240a9355e25.jpg">
+    <image width="300" src="https://user-images.githubusercontent.com/45596014/193247683-5763e1b4-c21f-4eff-b80f-b240a9355e25.jpg">
 
     </kbd>
 
 <br>
 
 - ### **URL까지 확인 시**
-    `$ git remote -v` <br><br>
+    ```bash
+    $ git remote -v
+    ```
+    
     <kbd>
-    <img width="478" alt="image" src="https://user-images.githubusercontent.com/45596014/193245734-fc7d1884-a77f-46a1-82fc-613c6853c398.png">
+    <img width="350" src="https://user-images.githubusercontent.com/45596014/193250063-05387170-d6e2-45a5-ae66-0257b0bf676e.jpg">
     </kbd>
 
 <br>
@@ -100,9 +114,9 @@
 
 ## **원격저장소에 연결**
 - ### 원격저장소 연결 시 add 옵션을 이용합니다.
-    `임시 예) $ git remote add [원격저장소별칭] [원격저장소 URL]`<br>
-    `실제 예) $ git remote add origin https://github.com/opsos1/server_summary.git`<br>
-    >[출력 예시 - 주소와 별칭](#url-까지-확인-시)
+    ```
+    $ git remote add [원격저장소별칭] [원격저장소 URL]
+    ```
 - ### fetch, push 두 주소 출력
     - push는 서버로 전송하는 동작
     - fetch는 반대로 서버에서 가지고 오는 동작
@@ -118,17 +132,15 @@
 
 ## **별칭 이름 변경과 정보**
 - 별칭 변경 방법<br>
-`임시 예) $ git remote rename 변경 전 변경 후`<br>
-`실제 예) $ git remote rename origin org`
+    ```bash
+    $ git remote rename [변경 전] [변경 후]
+    ```
 - 원격저장소에 관한 상세한 정보를 보는 방법<br>
-`$ git remote show 원격저장소별칭`
-    <출력 내용>
-    - 원격저장소별칭
-    - `Fetch URL` - 원격저장소 주소
-    - `Push URL` - 원격저장소 주소
-    - `HEAD branch` - 주 브랜치명
-    - `Remote branch` - 연결된 브랜치명
-    - `Local ref configured for 'git push'` - push 상태
+    ```bash
+    $ git remote show 원격저장소별칭
+    ```
+![Untitled-2](https://user-images.githubusercontent.com/45596014/193261893-70da5a63-00f7-458e-8dc8-699f893d1069.jpg)
+
 
 <br>
 
