@@ -61,6 +61,10 @@
 
 <br>
 
+[이전으로 이동](/index/01_server-repo.md)
+
+<br>
+
 [다음으로 이동](/index/03_link-remote.md)
 
 <br>

@@ -25,6 +25,10 @@
 
 <br>
 
+[이전으로 이동](/index/03_link-remote.md)
+
+<br>
+
 [다음으로 이동](/index/05_auto-pull.md)
 
 <br>

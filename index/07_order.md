@@ -38,3 +38,11 @@
     [remote "origin"]
         url = https://github.com/opsos1/server_summary.git
         fetch = +refs/heads/*:refs/remotes/origin/*
+
+<br>
+
+[이전으로 이동](/index/06_manual-fetch.md)
+
+<br>
+
+[목차로 이동](/README.md)

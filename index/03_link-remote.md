@@ -157,6 +157,10 @@
 
 <br>
 
+[이전으로 이동](/index/02_server-ready.md)
+
+<br>
+
 [다음으로 이동](/index/04_push.md)
 
 <br>
