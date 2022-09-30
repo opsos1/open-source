@@ -72,7 +72,8 @@
 - ### **원격저장소 이름(별칭) 출력 명령어**
     `$ git remote`<br><br>
     <kbd>
-    <img width="452" alt="image" src="https://user-images.githubusercontent.com/45596014/193246334-65dc7c08-d44a-462d-ae73-724f822e03cf.png">
+    <image width="250" src="https://user-images.githubusercontent.com/45596014/193247683-5763e1b4-c21f-4eff-b80f-b240a9355e25.jpg">
+
     </kbd>
 
 <br>
