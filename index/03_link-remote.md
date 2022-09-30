@@ -70,11 +70,14 @@
 </kbd>
 
 - ### **원격저장소 이름(별칭) 출력 명령어**
-    <원격저장소별칭 출력><br>
-    `$ git remote`<br>
-    -> origin
+    `$ git remote`<br><br>
+    <kbd>
+    <img width="452" alt="image" src="https://user-images.githubusercontent.com/45596014/193246334-65dc7c08-d44a-462d-ae73-724f822e03cf.png">
+    </kbd>
+
+<br>
+
 - ### **URL까지 확인 시**
-    <출력 내용 - 원격저장소별칭, URL><br>
     `$ git remote -v` <br><br>
     <kbd>
     <img width="478" alt="image" src="https://user-images.githubusercontent.com/45596014/193245734-fc7d1884-a77f-46a1-82fc-613c6853c398.png">
