@@ -22,3 +22,11 @@
     <kbd>
     <img width="600" src="https://user-images.githubusercontent.com/45596014/193267641-1ba54059-7cef-4f9a-8c3c-29114ec6ca40.jpg">
     </kbd>
+
+<br>
+
+[다음으로 이동](/index/05_auto-pull.md)
+
+<br>
+
+[목차로 이동](/README.md)
