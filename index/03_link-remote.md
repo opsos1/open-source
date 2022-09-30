@@ -66,6 +66,8 @@
 >※ remote 명령에 -help 옵션 사용 시 remote의 여러 옵션을 확인할 수 있습니다.<br>
 >※ 연결된 원격저장소가 없는 경우 출력되지 않습니다. 
 
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/45596014/193244066-b55d91c7-bd3b-44fc-8bb1-d1dfc26736ee.png">
+
 - ### **원격저장소 이름(별칭) 출력 명령어**
     <원격저장소별칭 출력><br>
     `$ git remote`<br>
