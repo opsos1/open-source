@@ -74,9 +74,8 @@
     -> origin
 - ### **URL까지 확인 시**
     <출력 내용 - 원격저장소별칭, URL><br>
-    `$ git remote -v`<br>
-    -> origin https://github.com/opsos1/server_summary.git (fetch)<br>
-    -> origin https://github.com/opsos1/server_summary.git (push)
+    `$ git remote -v` <br>
+    <img width="478" alt="image" src="https://user-images.githubusercontent.com/45596014/193245734-fc7d1884-a77f-46a1-82fc-613c6853c398.png">
 
 <br>
 
