@@ -95,7 +95,7 @@
     ```
     
     <kbd>
-    <img width="350" src="https://user-images.githubusercontent.com/45596014/193250063-05387170-d6e2-45a5-ae66-0257b0bf676e.jpg">
+    <img width="500" src="https://user-images.githubusercontent.com/45596014/193250063-05387170-d6e2-45a5-ae66-0257b0bf676e.jpg">
     </kbd>
 
 <br>
@@ -139,7 +139,8 @@
     ```bash
     $ git remote show 원격저장소별칭
     ```
-![Untitled-2](https://user-images.githubusercontent.com/45596014/193261893-70da5a63-00f7-458e-8dc8-699f893d1069.jpg)
+    <img width="650" src="https://user-images.githubusercontent.com/45596014/193262941-fb27a6a1-8dc2-478d-81f4-f4c17bcf2b67.jpg">
+
 
 
 <br>
@@ -147,10 +148,10 @@
 ## **원격 서버 삭제**
 `$ git remote rm origin(원격저장소별칭)`
 - 삭제 전 상태<br>
-    - origin https://github.com/opsos1/server_summary.git (fetch)<br>
-    - origin https://github.com/opsos1/server_summary.git (push)
+    <img width="469" alt="image" src="https://user-images.githubusercontent.com/45596014/193263191-c1878395-dcc7-4dd7-ab72-c441978fd679.jpg">
 - 삭제 후 상태<br>
-    - \-
+    <img width="469" src="https://user-images.githubusercontent.com/45596014/193263876-e1771e05-826d-4305-a6c2-8d51ba8ed18b.jpg">
+
 > ※ 삭제한 별칭의 fetch와 push 모두 삭제된 것을 확인할 수 있습니다.<br>
 > ※ $ git remote -v 로 확인한 상태 결과입니다.
 
