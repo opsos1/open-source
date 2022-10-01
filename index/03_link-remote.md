@@ -78,7 +78,7 @@
 >※ 연결된 원격저장소가 없는 경우 출력되지 않습니다.<br>
 
 <kbd>
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/45596014/193402364-93d602c6-527c-4ea2-96c2-554ecde361dd.jpg">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/45596014/193407314-74aa565b-a71d-4c8f-972e-75b0fad595f4.jpg">
 </kbd>
 
 <br>
@@ -88,7 +88,7 @@
     $ git remote
     ```
     <kbd>
-    <image width="300" src="https://user-images.githubusercontent.com/45596014/193247683-5763e1b4-c21f-4eff-b80f-b240a9355e25.jpg">
+    <image width="400" src="https://user-images.githubusercontent.com/45596014/193407244-423c705a-3e0f-4cdf-9a39-cc6092a604c1.jpg">
 
     </kbd>
 
@@ -98,7 +98,7 @@
     ```
     
     <kbd>
-    <img width="500" src="https://user-images.githubusercontent.com/45596014/193250063-05387170-d6e2-45a5-ae66-0257b0bf676e.jpg">
+    <img width="500" src="https://user-images.githubusercontent.com/45596014/193407558-20587eeb-ee97-4c30-8588-e21718c57723.jpg">
     </kbd>
 
 <br>
@@ -145,7 +145,7 @@
     $ git remote show 원격저장소별칭
     ```
     <kbd>
-    <img width="650" src="https://user-images.githubusercontent.com/45596014/193262941-fb27a6a1-8dc2-478d-81f4-f4c17bcf2b67.jpg">
+    <img width="650" src="https://user-images.githubusercontent.com/45596014/193407693-2a8b4d53-d4dc-4388-83b2-39035e945b67.jpg">
     </kbd>
 
 
@@ -155,12 +155,12 @@
 `$ git remote rm origin(원격저장소별칭)`
 - 삭제 전 상태<br>
     <kbd>
-    <img width="469" alt="image" src="https://user-images.githubusercontent.com/45596014/193263191-c1878395-dcc7-4dd7-ab72-c441978fd679.jpg">
+    <img width="469" alt="image" src="https://user-images.githubusercontent.com/45596014/193407558-20587eeb-ee97-4c30-8588-e21718c57723.jpg">
     </kbd>
 
 - 삭제 후 상태<br>
     <kbd>
-    <img width="469" src="https://user-images.githubusercontent.com/45596014/193263876-e1771e05-826d-4305-a6c2-8d51ba8ed18b.jpg">
+    <img width="469" src="https://user-images.githubusercontent.com/45596014/193407798-c72ac5f1-b03e-4d88-8a09-5d9126ad5416.jpg">
     </kbd>
 
 > ※ 삭제한 별칭의 fetch와 push 모두 삭제된 것을 확인할 수 있습니다.<br>
