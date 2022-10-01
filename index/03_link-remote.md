@@ -78,7 +78,7 @@
 >※ 연결된 원격저장소가 없는 경우 출력되지 않습니다.<br>
 
 <kbd>
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/45596014/193244066-b55d91c7-bd3b-44fc-8bb1-d1dfc26736ee.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/45596014/193402364-93d602c6-527c-4ea2-96c2-554ecde361dd.jpg">
 </kbd>
 
 <br>
