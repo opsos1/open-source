@@ -21,13 +21,17 @@
     같은 영역을 수정한 경우 풀 작업을 할 때 무조건 충돌이 발생합니다.
 - 가장 좋은 방식은 로컬저장소와 원격저장소의 상태를 자주 최신으로 맞춰주는 것이 좋습니다.
 
-        pull -> coding -> commit -> pull -> push
+    ```bash
+    pull -> coding -> commit -> pull -> push
+    ```
 
 ### **인증 정보 캐시**
 - ### 깃허브와 같은 호스팅 저장소 이용 시 아이디, 비밀번호가 필요한데,
     ### 깃에서는 인증 정보 캐시 기능을 통해 아이디와 비밀번호를 임시적으로 보관할 수 있습니다.<br><br>
 
-   `$ git config --global credential.helper cache`
+   ```bash
+   $ git config --global credential.helper cache
+   ```
 
 <br>
 
