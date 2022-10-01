@@ -32,9 +32,11 @@
 서버 통신을 위해 프로토콜을 사용해야 하며,
 깃은 기본적으로 Local, HTTP, SSH, Git 네 종류의 전송 방식을 지원합니다.
 - ### **Local(로컬)**<br>
-    - 자신의 컴퓨터를 서버로 이용할 때 편리하며, 일반 PC(로컬)에 원격저장소를 생성하는 것을 의미합니다.<br>
+    자신의 컴퓨터를 서버로 이용할 때 편리하며, 일반 PC(로컬)에 원격저장소를 생성하는 것을 의미합니다.<br>
 
-    `$ git remote add [원격저장소별칭] [폴더 경로]`
+    ```bash
+    $ git remote add [원격저장소별칭] [폴더 경로] # 원격저장소 연결
+    ```
     >※ 간단하게 서버를 구축할 수 있고, 빠른 동작이 가능하다는 장점이 있지만,<br>
     모든 자료가 자신의 컴퓨터에 집중되는 위험도 있습니다.
 
@@ -71,12 +73,15 @@
     - 잘 사용하지 않습니다.
 
 ## **원격저장소의 리모트 목록 관리**
-원격저장소 관리 시 remote 명령어를 사용하여 저장소 목록 확인, 등록, 취소 작업이 가능합니다.
+### 원격저장소 관리 시 remote 명령어를 사용하여 저장소 목록 확인, 등록, 취소 작업이 가능합니다.
 >※ remote 명령에 -help 옵션 사용 시 remote의 여러 옵션을 확인할 수 있습니다.<br>
->※ 연결된 원격저장소가 없는 경우 출력되지 않습니다. 
+>※ 연결된 원격저장소가 없는 경우 출력되지 않습니다.<br>
+
 <kbd>
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/45596014/193244066-b55d91c7-bd3b-44fc-8bb1-d1dfc26736ee.png">
 </kbd>
+
+<br>
 
 - ### **원격저장소 이름(별칭) 출력 명령어**
     ```bash
@@ -86,8 +91,6 @@
     <image width="300" src="https://user-images.githubusercontent.com/45596014/193247683-5763e1b4-c21f-4eff-b80f-b240a9355e25.jpg">
 
     </kbd>
-
-<br>
 
 - ### **URL까지 확인 시**
     ```bash
@@ -105,7 +108,10 @@
 프로토콜 + 도메인 주소 형태로 된 것을 확인할 수 있습니다.
 - ### **원격저장소별칭**
     - 원격 서버 주소는 긴 문자열로 되어있습니다.<br>
-    - 이 긴 문자열을 별칭으로 만들어 편하게 사용할 수 있습니다.
+    - 이 긴 문자열을 별칭으로 만들어 편하게 사용할 수 있습니다.<br>
+    <kbd>
+    <img width="500" src="https://user-images.githubusercontent.com/45596014/193394676-d3bff961-d6d7-466b-bd62-d2ae1f406da4.png">
+    </kbd>
 - ### **origin**
     - 대표적으로 많이 사용하는 별칭입니다.
     - 자신의 목적에 따라 다른 별칭을 사용할 수 있습니다.
@@ -117,16 +123,15 @@
     ```
     $ git remote add [원격저장소별칭] [원격저장소 URL]
     ```
-- ### fetch, push 두 주소 출력
+- ### **fetch, push** 두 주소 출력
     - push는 서버로 전송하는 동작
     - fetch는 반대로 서버에서 가지고 오는 동작
 
 <br>
 
 ## **소스 트리에서 원격 브랜치**
-- ### 원격저장소 등록 시 [main] 브랜치와 [원격] 브랜치가 생성됩니다.<br>
+- ### 원격저장소 등록 시 [master] 브랜치와 [원격] 브랜치가 생성됩니다.<br>
 - ### 로컬저장소와 서버 저장소를 구분하여 표시한 것으로 서로 동기화한 시점을 판별할 수 있습니다.
-    >기본 branch 명을 main으로 바꾸지 않았다면 main이 아닌 master 브랜치가 생성됩니다.
 
 <br>
 
@@ -139,8 +144,9 @@
     ```bash
     $ git remote show 원격저장소별칭
     ```
+    <kbd>
     <img width="650" src="https://user-images.githubusercontent.com/45596014/193262941-fb27a6a1-8dc2-478d-81f4-f4c17bcf2b67.jpg">
-
+    </kbd>
 
 
 <br>
@@ -148,9 +154,14 @@
 ## **원격 서버 삭제**
 `$ git remote rm origin(원격저장소별칭)`
 - 삭제 전 상태<br>
+    <kbd>
     <img width="469" alt="image" src="https://user-images.githubusercontent.com/45596014/193263191-c1878395-dcc7-4dd7-ab72-c441978fd679.jpg">
+    </kbd>
+
 - 삭제 후 상태<br>
+    <kbd>
     <img width="469" src="https://user-images.githubusercontent.com/45596014/193263876-e1771e05-826d-4305-a6c2-8d51ba8ed18b.jpg">
+    </kbd>
 
 > ※ 삭제한 별칭의 fetch와 push 모두 삭제된 것을 확인할 수 있습니다.<br>
 > ※ $ git remote -v 로 확인한 상태 결과입니다.

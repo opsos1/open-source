@@ -8,28 +8,104 @@
 
 ## **clone: 복제**
 ### 원격저장소 파일을 그대로 가져오는 방식입니다.
-1. clone 받을 폴더로 이동
-    ```bash
-    $ cd [폴더명] # clone 파일을 보관할 폴더로 이동합니다.
-    $ mkdir [폴더명] # clone 받을 폴더를 생성합니다.
-    $ cd [폴더명] # 생성한 폴더로 이동합니다.
-    ```
-2. clone 받기
-    ```bash
-    $ git clone [원격저장소 주소] [로컬저장소 위치] # 저장소 파일이 한 폴더에 묶여서 저장됩니다.
-    ```
->※ 로컬저장소 위치에 '.'을 입력할 경우 현재 위치에 clone됩니다.<br>
->※ clone 시 다운로드한 파일이 자동으로 받아온 원격저장소와 연결됩니다.<br>
+### **1. clone 받을 폴더로 이동**
+```bash
+$ cd [폴더명] # clone 파일을 보관할 폴더로 이동
+$ mkdir [폴더명] # clone 받을 폴더를 생성
+$ cd [폴더명] # 생성한 폴더로 이동
+```
+### **2. clone 받기**
+```bash
+$ git clone [원격저장소 주소] [로컬저장소 위치] # 저장소 파일이 한 폴더에 묶여서 저장
+```
+>※ clone으로 받은 파일이 자동으로 원격저장소와 연결됩니다.<br>
 >※ 처음으로 서버에서 코드를 내려받을 때 사용합니다.
 
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/193399450-3d9c6f05-ec20-44df-81e1-70bc8ceb2d0f.jpg">
+</kbd>
+
 ## **pull: 서버에서 내려받기**
-- ### 로컬저장소에 원격저장소 파일이 있지만, 원격저장소에 최신 코드가 존재할 때<br>
-- ### 로컬저장소로 내려받아(병합) 최신 코드 상태에서 바로 작업할 수 있습니다.
+### 로컬저장소에 원격저장소 파일이 있지만, 원격저장소에 최신 코드가 존재할 때<br>
+### 로컬저장소로 내려받아(병합) 최신 코드 상태에서 바로 작업할 수 있습니다.
 
-`$ git pull`
+<br>
 
->※ pull은 원격저장소와 로컬저장소 간 커밋을 반영할 수 있습니다.
+### **1. 복제 폴더 생성**
+```bash
+$ cd [원본 폴더 주소] # 원본 폴더가 있는 위치로 이동
+$ cp -r [원본 폴더명] [복제 폴더명] # r 속성은 폴더 내부까지 복사
+```
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/193397314-02238d7c-be5f-4a96-85d5-9da1eb2cca78.jpg">
+</kbd>
+
+<br>
+
+### **2. 원본 로컬저장소로 이동**
+```bash
+$ cd [원본 폴더명] # 원격저장소에 대한 파일이 저장된 로컬저장소로 이동
+```
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/193397839-475cd26a-2dbb-4e50-86cb-13dc5f76af5f.jpg">
+</kbd>
+
+<br>
+
+### **3. 내부 파일 실행 후 수정**
+```bash
+$ code README.md # [README.md] 파일 [vscode]로 실행 후 파일 수정
+```
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/193397466-2c07a6ec-5228-4672-a3a4-c9c2ce4c5c88.png">
+</kbd>
+
+<br>
+
+### **4. 수정된 파일 add & commit & push**
+```bash
+$ git commit -am "commit" # add 및 commit 동시 진행
+$ git push origin main # origin(별칭) -> main(브랜치)
+```
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/193399066-ef9447d8-0ecc-4cb9-89a6-e960d275d2cf.jpg">
+</kbd>
+
+<br>
+
+### **5. 복제 폴더로 이동 후 로그 확인**
+```bash
+$ cd ../[복제 폴더명]
+$ git log # 복제 폴더에서는 4번에서 커밋한 기록이 보이지 않음
+```
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/193398918-447932e6-9220-4ba7-a494-6a0bed5bd120.jpg">
+</kbd>
+
+<br>
+
+### **7. pull 내려받기**
+```bash
+$ git pull # 연결된 원격저장소 파일을 내 파일과 자동으로 병합
+```
+>※ pull은 원격저장소와 로컬저장소 간 커밋을 반영할 수 있습니다.<br>
 >즉, 원격저장소는 로컬저장소와 원격저장소의 커밋 기록을 동기화합니다. 
+
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/193399137-07a1cc7f-3f58-44ad-8141-f2e9e51a6096.jpg">
+</kbd>
+
+<br>
+
+### **8. 복제 폴더 로그 다시확인**
+```bash
+$ git pull # 연결된 원격저장소 파일을 내 파일과 자동으로 병합
+```
+>※ 정상적으로 커밋이 병합된 것을 확인할 수 있습니다.
+
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/193399256-1f6bce1e-37d9-445d-9f05-c2e68e81573b.jpg">
+</kbd>
 
 <br>
 
