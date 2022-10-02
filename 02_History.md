@@ -11,7 +11,7 @@
     >※ 당시엔 소프트웨어의 **비용을 낮추고 더 많은 프로그램**을 제공하는 것이 하드웨어 회사들의 경쟁력이었습니다.<br>
     >※ 1983년에 들어, IBM은 더 이상 소스코드를 배포하지 않겠다고 발표했습니다.
 
-    <kbd src="https://www.ibm.com/">
+    <kbd href="https://www.ibm.com/">
     <img width="300" src="https://user-images.githubusercontent.com/45596014/193438499-1b58f81b-a84c-422a-b8b8-b03375fffb8c.jpg">
     </kbd>
 
