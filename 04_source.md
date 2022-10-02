@@ -19,6 +19,8 @@
 
 - [OPENSOURCE](https://opensource.org/)
 
+- [linux](https://www.linux.org/)
+
 ### 오픈소스 현황
 - [KDI 경제정보센터](https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000151326&issus=O&pp=20&datecount=&pg=)
 
