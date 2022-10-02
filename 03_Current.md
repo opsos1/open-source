@@ -33,7 +33,7 @@
 2021년을 기점으로 오픈소스의 영향력이 더 커진 것을 확인할 수 있습니다.
 
 <kbd>
-<imgs width="300" src="https://user-images.githubusercontent.com/45596014/193461265-892f9e3e-b120-485d-a2bf-cb1c1e58a0d1.png">
+<img width="700" src="https://user-images.githubusercontent.com/45596014/193461265-892f9e3e-b120-485d-a2bf-cb1c1e58a0d1.png">
 </kbd>
 
 
