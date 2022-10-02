@@ -39,8 +39,7 @@
         >※ 누구나 GNU의 소프트웨어를 가져다 수정할 수 있고 재배포 할 수 있습니다.
         
     - **1985년 [FSF 재단](http://www.fsf.org)을 조직했습니다.**<br>
-        동시에 **`소프트웨어는 공유돼야 하며, 프로그래머는 소프트웨어로 돈을 벌어서는 안된다`** 는 <br>
-        내용의 GNU 선언문을 재정했습니다.
+        동시에 GNU 선언문을 재정했습니다. ( 4가지 자유 )
         ```properties
         1.  프로그램을 어떠한 목적을 위해서도 실행할 수 있는 자유
         2.  프로그램의 작동 원리를 연구하고 이를 자신의 필요에 맞게 변경시킬 수 있는 자유
@@ -51,14 +50,20 @@
         >※ Free Software Foundation (자유 소프트웨어 재단)<br>
         >※ 뛰어난 소프트웨어들을 만들었지만, Linux 이전에 OS의 핵심 모듈인 kernel은 개발하지 못했습니다.
 
-    - C 컴파일러([GCC](https://gcc.gnu.org/)), 텍스트 에디터([GNU Emacs](https://www.gnu.org/software/emacs/))와 같은 뛰어난 소프트웨어들을 만들었습니다.
-        
+    - **C 컴파일러([GCC](https://gcc.gnu.org/)), 텍스트 에디터([GNU Emacs](https://www.gnu.org/software/emacs/))와 같은 뛰어난 소프트웨어들을 만들었습니다.**
+
+    <kbd>
+    <img width="250" src="https://user-images.githubusercontent.com/45596014/193439961-1dd1e3a6-4648-404e-a2a1-58a8016d02bc.jpg">
+    </kbd>
+    
 <br>
 
 - ### **Linux**
     - 1991년 리누스 토발즈가 개발한 커널(OS)입니다.
-    - 이태까지 커널이 개발되지 않았던 GNU에게 있어 Linux는 GNU 소프트웨어들의 가장 인기있는 선택이 되었습니다.
+    - 이태까지 커널이 개발되지 않았던 GNU에게 있어 Linux는 GNU 소프트웨어들에게 매우 인기 있었습니다.
     - Linux 와 GNU를 합쳐 Lignux라는 단어를 사용했지만, 이후 GNU/Linux로 대체되었습니다.<br>
+
     <kbd>
     <img width="250" src="https://user-images.githubusercontent.com/45596014/193439339-0dce61ab-a24f-4ce6-9bc1-d0d0884c9835.jpg">
     </kbd>
+
