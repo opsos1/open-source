@@ -1,9 +1,9 @@
-# **오픈소스의 개념**
+# **:question: 오픈소스의 개념**
 ```
 공개적으로 엑세스할 수 있게 설계되어, 누구나 자유롭게 확인/수정/배포가 가능한 코드입니다.
 다양한 방식으로 오픈소스를 제어하는 라이선스들이 존재합니다.
 ```
-## **오픈소스 라이선스 종류**
+## **:bookmark_tabs: 오픈소스 라이선스 종류**
 <details>
 <summary><h4>1. Apache</h4></summary>
 
@@ -65,7 +65,7 @@
 
 <br>
 
-## **Open Source Software VS Free Software**
+## **:first_quarter_moon: Open Source Software VS Free Software**
 ### 여기서 **"오픈 소스"** 개념과 **"자유 소프트웨어"** 개념을 완전히 다른 개념입니다.
 ### Richard Stallman은 **"오픈 소스"** 개념보다 **"자유 소프트웨어"** 개념에 더 관심을 가졌습니다.
 
