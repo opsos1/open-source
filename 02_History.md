@@ -122,7 +122,7 @@ Git이 개발되기 전, 일부 리눅스 커널 개발자는 [BitKeeper](https:
 <img width="200" src="https://user-images.githubusercontent.com/45596014/193445230-a7d0b836-9ca4-4ffc-81c2-d73889916e1e.png">
 </kbd>
 
-<br>
+<br><br>
 
 [이전 - 01_오픈소스의 개념](01_About.md)
 

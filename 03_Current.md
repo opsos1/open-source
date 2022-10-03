@@ -54,7 +54,10 @@
 
 ### **안드로이드 (Android)**
 2008년 구글은 스마트폰 운영체제인 안드로이드 첫 버전을 오픈소스로 출시했습니다.
+- Android Inc.를 구글이 인수하여 구글의 이름으로 출시되었습니다.
 - [Apache 2.0](https://source.android.com/docs/setup/about/licenses) 라이선스를 가지고 있습니다.
+- 아파치 v2 라이선스로 배포되고 있어, 기업 또는 일반 사용자들은 안드로이드 프로그램을 독자적으로 개발 및 탑재할 수 있습니다.<br>
+  또한 이를 판매 가능하게 구글 플레이를 제공하고 있습니다.
 
 <kbd>
 <img height="150" src="https://user-images.githubusercontent.com/45596014/193505380-9cb778bb-b838-4d87-8f6b-d8624f49d582.png">
@@ -73,7 +76,7 @@
 
 <br>
 
-## **최근 출시된 오픈소스 소프트웨어 현황**
+## **:newspaper: 최근 출시된 오픈소스 소프트웨어 현황**
 ### **플루터 (Flutter)**
 2015년에 기술되었으며, 2017년에 Google에서 만든 오픈소스 개발도구 입니다.
 - [BSD 라이선스](https://github.com/flutter/flutter/blob/master/LICENSE)를 가지고 있습니다.
@@ -98,7 +101,7 @@ Flux에 대한 강력한 확장으로, WGE(Weave GitOps Enterprise) 에서 개�
 <img height="150" src="https://user-images.githubusercontent.com/45596014/193505250-ec888f6b-c4d3-4be6-bc5e-122b30428ef4.png">
 </kbd>
 
-<br>
+<br><br>
 
 [이전 - 02_오픈소스의 역사](02_History.md)
 
