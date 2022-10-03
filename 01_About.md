@@ -5,7 +5,7 @@
 ```
 ## **오픈소스 라이선스 종류**
 <details>
-<summary><h3>1. Apache</h3></summary>
+<summary><h4>1. Apache</h4></summary>
 
     아파치 소프트웨어 재단 자체적으로 만든 라이선스입니다.<br>
    - 소스코드에 대한 공개 의무 등의 의무사항은 없지만 아파치 라이선스의 소스코드를 수정하여 배포하는 경우<br>
@@ -14,7 +14,7 @@
 
 </details>
 <details>
-<summary><h3>2.  GPL (GNU GPL)</h3></summary>
+<summary><h4>2.  GPL (GNU GPL)</h4></summary>
 
    자유 소프트웨어 재단(FSF)에서 만든 라이선스 입니다.
    - 가장 강한 제약 조건을 포함하고 있는 카피레프트(Copyleft) 조항이 있습니다.
@@ -25,7 +25,7 @@
 </details>
 <details>
 
-<summary><h3>3. AGPL (GNU Affero GPL)</h3></summary>
+<summary><h4>3. AGPL (GNU Affero GPL)</h4></summary>
    GPL을 기반으로 만들어진 라이선스로 자유 소프트웨어 재단(FSF)에서 만든 라이선스 입니다.
    - 서버에서 프로그램을 실행하여 다른 사용자들과 통신하게 된다면,<br>
     실행되고 있는 프로그램의 소스 코드를 사용자들이 다운로드 받을 수 있게 해야 한다는 독특한 조항이 담겨있습니다.
@@ -33,35 +33,37 @@
 
 </details>
 <details>
-<summary><h3>4. LGPL (GNU Lesser GPL)</h3></summary>
+<summary><h4>4. LGPL (GNU Lesser GPL)</h4></summary>
    자유 소프트웨어 재단(FSF)의 강력한 철학이 담긴, GPL의 카피레프트 조항을 보완하기 위해 만든 라이선스입니다.
    - 소라이브러리/모듈 링크를 허용한 라이선스입니다.
    - Mozzilla Firefox(v2.1)
 </details>
 <details>
-<summary><h3>5. MIT</he></summary>
+<summary><h4>5. MIT</he></summary>
    미국 매사추세츠 공과대학교(MIT)에서 해당 대학의 소프트웨어 공학도들을 돕기 위해 개발한 라이선스입니다.
    - 라이선스와 저작권 관련 명시만 지켜주면 되는 조건을 가진 라이선스 입니다.
    - Bootstrap | Angular.js | Backbone.js | jQurey
 </details>
 <details>
-<summary><h3>6. Artistic</h3></summary>
+<summary><h4>6. Artistic</h4></summary>
    Perl 프로그래밍 언어를 사용하던 Larry Wall이 표준 펄(Perl) 기능을 위해 개발한 라이선스입니다.
    - NPM(Node Pacakge Manager) (v2.0)
 </details>
 <details>
-<summary><h3>7. Eclpse</h3></summary>
+<summary><h4>7. Eclpse</h4></summary>
    이클립스사에서 비즈니스 환경에 적합하도록 만든 기업 친화적인 라이선스 입니다.
    - 강력한 카피레프트 조항이 담긴 GPL 보다 제약 조건이 완화된 라이선스입니다.
    - Eclipse (v1.0)
 </details>
 <details>
-<summary><h3>8. BSD (Berkeley Software Distribution)</h3></summary>
+<summary><h4>8. BSD (Berkeley Software Distribution)</h4></summary>
    버클리의 캘리포니아 대학에서 배포하는 공개 소프트웨어의 라이선스입니다.
 </details>
 <details>
-<summary><h3>9. MPL (Mozilla Pulbic License)</h3></summary>
+<summary><h4>9. MPL (Mozilla Pulbic License)</h4></summary>
 </details>
+
+<br>
 
 ## **Open Source Software VS Free Software**
 ### 여기서 **"오픈 소스"** 개념과 **"자유 소프트웨어"** 개념을 완전히 다른 개념입니다.
