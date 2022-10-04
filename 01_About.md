@@ -58,9 +58,14 @@
 <details>
 <summary><h4>8. BSD (Berkeley Software Distribution)</h4></summary>
    버클리의 캘리포니아 대학에서 배포하는 공개 소프트웨어의 라이선스입니다.
+   - 저작권 표시 조건 외 아무런 제한 없이 누구나 자신의 용도로 사용할 수 있도록 만들어 졌습니다.
+   - Nginx (The BSD 2-Clause License)
 </details>
 <details>
 <summary><h4>9. MPL (Mozilla Pulbic License)</h4></summary>
+   과거 넷스케이프(Netscape) 브라우저의 소스코드를 공개하기 위해 개발된 라이선스입니다.<br>
+   - 소스코드와 실행파일의 저작권을 분리함으로써 수정한 소스코드의 경우 MPL로 공개하고 원저작자에게 수정한 부분에 대해 알려야 하지만<br>실행파일은 독점 라이선스로 배포가 가능합니다.
+   - Mozilla Firefox (v1.1) | Mozilla Thunderbird (v1.1)
 </details>
 
 <br>
