@@ -230,3 +230,38 @@ $ git log -3 로그 확인
 <kbd>
 <img src="https://user-images.githubusercontent.com/45596014/199490265-b329be1a-900a-4de7-b0f3-00a08decfd58.jpg">
 </kbd>
+
+### **리베이스 후 브랜치**
+리베이스 병합 이후 커밋은 정리되었지만, 브랜치 모양이 약간 다릅니다.<br>
+<kbd>**리베이스 후 브랜치의 마지막 커밋 위치**
+<img src="https://user-images.githubusercontent.com/45596014/199490884-a03fed2b-8231-4cd1-8f6a-7c30935325d0.jpg">
+</kbd>
+
+일반적으로 병합을 한 후 두 브랜치는 같은 커밋 ID를 가리킵니다.<br>
+하지만 소스트리에서 확인된 브랜치 위치는 서로 다릅니다.<br>
+<kbd>**브랜치의 HEAD 포인터**
+<img src="https://user-images.githubusercontent.com/45596014/199491203-8b19055c-1b75-4a5f-a242-b1459eab4a3d.jpg">
+</kbd>
+
+리베이스는 `커밋 위치`를 재조정할 뿐 브랜치의 HEAD 포인터까지 옮겨 주지는 않습니다.<br>
+리베이스한 후에는 이러한 병합 브랜치의 HEAD를 맞추어야 합니다.<br>
+> ※ 즉, 리베이스된 브랜치를 병합해야 합니다.<br>
+
+병합을 위해 master 브랜치로 체크아웃합니다.<br>
+그리고 master 브랜치에서 merge 명령어를 실행합니다.
+
+```bash
+infoh@DESKTOP MINGW64 /e/gitstudy08 (description)
+$ git checkout master  # 마스터 브랜치로 변경
+
+infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
+$ git merge description  # HEAD 포인터 조정(병합)
+
+> Updating a7fe40b..48caea0
+
+> Fast-forward 병합 방식 확인
+
+>  index.htm | 1 +
+
+>  1 file changed, 1 insertion(+)
+```
