@@ -1,4 +1,4 @@
-# **:pencil2:리베이스**
+# **:pencil2: 리베이스**
 ```
 브랜치를 합치는 방법으로는 병합(merge)과 리베이스(rebase) 두 가지가 있습니다.
 그중 리베이스(rebase) 는 커밋의 트리 구조를 재배열합니다.
@@ -7,7 +7,7 @@
 
 <br>
 
-## :guitar:베이스
+## :guitar: 베이스
 브랜치는 커밋 하나를 기준으로 새로운 작업을 진행할 수 있는 분리된 작업 경로를 의미합니다.
 
 <kbd>
@@ -18,7 +18,7 @@
 > &nbsp;&nbsp;&nbsp; 새로운 브랜치가 파생되는 커밋2를 **베이스(base)** 라고 합니다. <br>
 > ※ 병합에서는 이를 **공통 조상 커밋** 이라고 합니다.
 
-## **:cloud:베이스 변경**
+## **:cloud: 베이스 변경**
 파생된 브랜치의 기준이 되는 **베이스 커밋**을 변경하는 것입니다.<br>
 여기서 브랜치의 베이스를 변경하는 이유는 커밋의 진행 모습을 단순화하기 위함입니다. <br><br>
 리베이스는 코드의 베이스 분기점을 변경하여 마치 하나의 기찻길 처럼 만듭니다.<br>
@@ -30,7 +30,7 @@
 
 <br>
 
-## **:straight_ruler:리베이스 vs 병합**
+## **:straight_ruler: 리베이스 vs 병합**
 ### **병합**
 병합은 파생된 두 브랜치를 하나로 합치는 과정으로,<br>
 병합하려면 두 브랜치의 공통 조상 커밋을 먼저 찾아야 합니다.<br>
@@ -72,7 +72,7 @@
 
 <br>
 
-## **:computer:리베이스 명령어**
+## **:computer: 리베이스 명령어**
 ```bash
 $ git rebase [브랜치]
 ```
@@ -183,3 +183,50 @@ merge 명령어를 사용한 병합은 현재의 기준 브랜치에서 다른 �
     <kbd>
     <img src="https://user-images.githubusercontent.com/45596014/199487881-fa510c66-7981-40cb-a74d-4186caca7f2f.jpg">
     </kbd>
+
+    <br>
+
+## **:heavy_check_mark: 리베이스되었는지 확인**
+베이스 커밋을 변경하는 과정에서 커밋들은 재배치 작업을 합니다.<br>
+이 과정에서 커밋의 해시 값이 변경됩니다.
+
+### **리베이스한 후 로그상태**
+```bash
+infoh@DESKTOP MINGW64 /e/gitstudy08 (description)
+$ git log -3 로그 확인
+
+> commit 48caea016f0e330cfc1dfcd587996fa9a32042fd (HEAD -> description)
+
+> Author: hojin <infohojin@gmail.com>
+
+> Date:   Sat May 18 17:27:09 2019 +0900
+
+    add description
+
+ 
+
+> commit a7fe40bb622f6c8af0b1f25b0d86ea96c7896c50 (master)
+
+> Author: hojin <infohojin@gmail.com>
+
+> Date:   Sat May 18 17:28:59 2019 +0900
+
+>     add menu6
+
+ 
+
+> commit 8959f0cca024504cfe321adf440c9c888f8e4693
+
+> Author: hojin <infohojin@gmail.com>
+
+> Date:   Sat May 18 17:28:29 2019 +0900
+
+>     add menu5
+```
+### **바뀐 점**
+리베이스 병합 이후에 커밋 ID가 변경되었습니다.
+> 커밋 위치가 변경될 때 해시 값 중복을 방지하려고 새로운 커밋 해시를 생성합니다.
+
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/199490265-b329be1a-900a-4de7-b0f3-00a08decfd58.jpg">
+</kbd>
