@@ -131,7 +131,8 @@ $ git rebase [브랜치]
     </kbd>
 
 <br>
-<select>
+<details>
+<summary>리베이스와 병합 방식 및 진행상황</summary>
 ## **:incoming_envelope:리베이스 병합**
 리베이스는 병합 기준 브랜치가 merge 명령어와 반대입니다.<br>
 merge 명령어를 사용한 병합은 현재의 기준 브랜치에서 다른 브랜치를 읽어와서 결합합니다.
@@ -154,4 +155,31 @@ merge 명령어를 사용한 병합은 현재의 기준 브랜치에서 다른 �
 <kbd>
 <img src="https://user-images.githubusercontent.com/45596014/199485627-5caa825e-74d7-4983-a74e-af32dca7626a.jpg">
 </kbd>
-</select>
+</details>
+
+<br>
+
+5. **리베이스를 위해 description 브랜치로 체크아웃**
+    ```bash
+    infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
+    $ git checkout description
+    > Switchec to branch 'description'
+
+    infoh@DESKTOP MINGW64 /e/gitstudy08 (description)
+    ```
+6. description 브랜치에서 원본 master 브랜치를 리베이스
+    > ※ 파생 브랜치의 커밋들은 기준 브랜치의 마지막 커밋으로 재정렬됩니다.
+    ```bash
+    infoh@DESKTOP MINGW64 /e/gitstudy08 (description)
+    $ git rebase master
+    > First rewinding head to replay your work on top of it...
+    > Applying: add description
+    ```
+
+    **소스트리 결과**<br>
+    > ※ master 브랜치의 마지막 커밋 ‘add menu6’ 뒤에 파생 브랜치의 커밋이 연결된 것을 볼 수 있습니다.<br>
+    > ※ 두 브랜치를 하나의 그래프 모양으로 합친 형태입니다.
+
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/199487881-fa510c66-7981-40cb-a74d-4186caca7f2f.jpg">
+    </kbd>
