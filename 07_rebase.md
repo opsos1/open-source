@@ -376,10 +376,10 @@ CONFLICT (content): Merge conflict in index.htm  # 충돌
 # 기타 에러 코드
 ```
 
-<br>
 <details>
-<summary>에러코드<summary>
-<p>
+<summary>세부 에러 코드</summary>
+
+```
 error: Failed to merge in the changes.
 hint: Use ‘git am –show-current-patch’ to see the failed patch
 Patch failed at 0001 edit menu5
@@ -390,5 +390,85 @@ You can instead skip this commit: run “git rebase –skip”.
 To abort and get back to the state before “git rebase”, run “git rebase –abort”.
 PREV
 BUY
-</p>
+```
+
 </details>
+
+<br>
+
+### **충돌 시 문제해결**
+충돌을 수정한 시 rebase 명령어와 --continue 옵션을 사용합니다.
+
+```bash
+$ git rebase --continue
+```
+
+1. 코드 확인
+    > ※ 앞에 배운 병합과 동일하시 충돌기호가 표시됩니다.
+    ```bash
+    infoh@DESKTOP MINGW64 /e/gitstudy08 (menu|REBASE 1/2)
+    code index.htm  # VS code 실행
+    ```
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/199634951-2ed5898e-c627-446a-98dc-0044bc61d6bf.png">
+    </kbd>
+2. 수정
+    <kbd>
+    <img src="https://user-images.githubusercontent.com/45596014/199635163-739e3e11-797f-482e-9d79-959d4bbf2d9b.jpg">
+    </kbd>
+3. 충돌 수정 적용
+    ```bash
+    infoh@DESKTOP MINGW64 /e/gitstudy08 (menu|REBASE 1/2)
+    $ git rebase --continue
+    > Applying: edit menu5
+    > Applying: edit menu6
+    > Using index info to reconstruct a base tree…
+    > M       index.htm
+    > Falling back to patching base and 3-way merge…
+    > No changes – Patch already applied.
+
+    > infoh@DESKTOP MINGW64 /e/gitstudy08 (menu) # 충돌 해결
+    ```
+
+<br>
+
+### **특정 커밋 충돌 제외**
+- `--skip` 옵션을 사용하여 특정 커밋의 충돌을 제외할 수 있으나 추천하는 방법은 아닙니다.<br>
+- 대부분 코드는 이전 코드와 많이 연결되어 있기 때문에 직접 문제를 해결하고
+- --continue 옵션을 사용하여 다음 단계로 넘어가는 것이 좋습니다.<br>
+- 리베이스를 취소할 경우 –-abort 옵션을 사용합니다.
+    ```bash
+    git rebase --abort
+    ```
+### 충돌 해결 후 병합
+```bash
+infoh@DESKTOP MINGW64 /e/gitstudy08 (menu)
+$ git checkout master  # master브랜치로 변경
+> Switched to branch 'master'
+
+infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
+$ git merge menu  # 병합, HEAD 일치시키기
+> Updation 93aa6eb..690cc95
+> Fast-forward
+>  index.htm | 7 +++++--
+>  1 file changed, 5 insertions(+), 2 deletions(-)
+
+infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
+$ git branch -d menu  # menu 브랜치 삭제
+Deleted branch menu (was 690cc95).
+```
+
+<br>
+
+## **rebase 명령어로 커밋 수정**
+마지막 커밋은 `--amend` 옵션으로 수정할 수 있습니다.
+
+이 방법 외에 rebase 명령어로도 최종 커밋을 수정할 수 있습니다.
+
+실제 병합은 아니지만 리베이스는 커밋 위치를 재조정하여 병합과 유사한 효과를 보입니다.
+
+그리고 Fast-Forward 병합을 이용하여 선형 구조 형태로 브랜치 모양을 정리하죠.
+
+리베이스는 커밋을 재조정하는 것 외에도 여러 커밋을 한 커밋으로 묶을 수 있습니다. 이때는 -i 옵션을 사용합니다.
+
+실습하기 전에 현재 저장소 상태를 확인합시다.
