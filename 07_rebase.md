@@ -254,24 +254,24 @@ $ git log -3 로그 확인
 
 <br>
 
-병합을 위해 master 브랜치로 체크아웃합니다.<br>
+7. 병합을 위해 master 브랜치로 체크아웃합니다.<br>
 그리고 master 브랜치에서 merge 명령어를 실행합니다.
 
-```bash
-infoh@DESKTOP MINGW64 /e/gitstudy08 (description)
-$ git checkout master  # 마스터 브랜치로 변경
+    ```bash
+    infoh@DESKTOP MINGW64 /e/gitstudy08 (description)
+    $ git checkout master  # 마스터 브랜치로 변경
 
-infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
-$ git merge description  # HEAD 포인터 조정(병합)
+    infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
+    $ git merge description  # HEAD 포인터 조정(병합)
 
-> Updating a7fe40b..48caea0
+    > Updating a7fe40b..48caea0
 
-> Fast-forward 병합 방식 확인
+    > Fast-forward 병합 방식 확인
 
->  index.htm | 1 +
+    >  index.htm | 1 +
 
->  1 file changed, 1 insertion(+)
-```
+    >  1 file changed, 1 insertion(+)
+    ```
 <kbd>**병합 후 소스트리 상태**<br>
 <img src="https://user-images.githubusercontent.com/45596014/199624049-75a9cc1b-5008-4130-913f-367b0c57374c.jpg">
 </kbd>
@@ -307,3 +307,88 @@ $ git branch -d description
 <br>
 
 ## **:boom: 리베이스 충돌과 해결**
+리베이스는 기준점을 변경 하며,<br>
+리베이스 역시 병합 과정에서 충돌이 발생할 수 있습니다.<br>
+> ※ 리베이스 충돌 또한 사용자가 직접 수동으로 해결해야 합니다.
+
+### **브랜치 생성 및 커밋**
+```bash
+infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
+$ git checkout -b menu  # menu 브랜치 생성 및 이동
+
+infoh@DESKTOP MINGW64 /e/gitstudy08 (menu)
+$ code index.htm  # VS code 실행(수정)
+
+infoh@DESKTOP MINGW64 /e/gitstudy08 (menu)
+$ git commit -am "edit menu5"  # 커밋
+> [menu 9f0bc0d] edit menu6
+>  1file changed, 5 insertions(+), 2 deletions(-)
+```
+
+<kbd>
+<img height="280" src="https://user-images.githubusercontent.com/45596014/199630232-67bcee15-fafa-4735-83d9-65842088c833.jpg">
+</kbd>
+
+### **충돌 생성**
+master 브랜치에서도 동일한 위치의 내용을 수정하여 충돌을 만들겠습니다.<br>
+> ※ master 브랜치로 체크아웃합니다.<br>
+> ※ 그리고 master 브랜치에서 index.htm 파일을 수정하고 커밋합니다. 
+```bash
+infoh@DESKTOP MINGW64 /e/gitstudy08 (menu)
+$ git checkout master  # master 브랜치로 이동
+
+infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
+$ code index.htm  # VS code 실행(수정)
+
+infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
+$ git commit -am "edit submenu for menu5"
+> [master 93aa6eb] edit submenu for menu5
+>  1 file changed, 1 insertion(+), 1 deletion(-)
+```
+<kbd>
+<img height="250" src="https://user-images.githubusercontent.com/45596014/199629752-a6ca8809-fc0a-40fa-b38f-de1ed3317397.jpg">
+</kbd>
+
+### **현재 상태**
+> ※ 서로 다른 브랜치 모양으로 분기되었습니다
+
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/199631833-902331ae-dfac-41e0-88b3-e7cd59d8e7fc.png">
+</kbd>
+
+<br>
+
+### **리베이스를 통한 병합**
+```bash
+infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
+$ git checkout menu  # menu 브랜치로 이동
+> Switched to branch 'menu'
+
+infoh@DESKTOP MINGW64 /e/gitstudy08 (main)
+$ git rebase master
+First, rewinding head to replay your work on top of it...
+Applying: edit menu5
+Using index info to reconstruct a base tree...
+M       index.htm
+Falling back to patching base and 3-way merge…
+Auto-merging index.htm
+CONFLICT (content): Merge conflict in index.htm  # 충돌
+# 기타 에러 코드
+```
+
+<br>
+<details>
+<summary>에러코드<summary>
+<p>
+error: Failed to merge in the changes.
+hint: Use ‘git am –show-current-patch’ to see the failed patch
+Patch failed at 0001 edit menu5
+
+Resolve all conflicts manually, mark them as resolved with
+“git add/rm <conflicted_files>”, then run “git rebase –continue”.
+You can instead skip this commit: run “git rebase –skip”.
+To abort and get back to the state before “git rebase”, run “git rebase –abort”.
+PREV
+BUY
+</p>
+</details>
