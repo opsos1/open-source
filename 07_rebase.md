@@ -225,11 +225,14 @@ $ git log -3 로그 확인
 ```
 ### **바뀐 점**
 리베이스 병합 이후에 커밋 ID가 변경되었습니다.
-> 커밋 위치가 변경될 때 해시 값 중복을 방지하려고 새로운 커밋 해시를 생성합니다.
+> ※ 커밋 위치가 변경될 때 해시 값 중복을 방지하려고<br>
+> &nbsp;&nbsp;&nbsp;새로운 커밋 해시를 생성합니다.
 
 <kbd>
 <img src="https://user-images.githubusercontent.com/45596014/199490265-b329be1a-900a-4de7-b0f3-00a08decfd58.jpg">
 </kbd>
+
+<br>
 
 ### **리베이스 후 브랜치**
 리베이스 병합 이후 커밋은 정리되었지만, 브랜치 모양이 약간 다릅니다.<br>
@@ -237,8 +240,10 @@ $ git log -3 로그 확인
 <img src="https://user-images.githubusercontent.com/45596014/199490884-a03fed2b-8231-4cd1-8f6a-7c30935325d0.jpg">
 </kbd>
 
+<br>
+
 일반적으로 병합을 한 후 두 브랜치는 같은 커밋 ID를 가리킵니다.<br>
-하지만 소스트리에서 확인된 브랜치 위치는 서로 다릅니다.<br>
+하지만 소스트리에서 확인된 브랜치 위치는 서로 다릅니다.<br><br>
 <kbd>**브랜치의 HEAD 포인터**
 <img src="https://user-images.githubusercontent.com/45596014/199491203-8b19055c-1b75-4a5f-a242-b1459eab4a3d.jpg">
 </kbd>
@@ -246,6 +251,8 @@ $ git log -3 로그 확인
 리베이스는 `커밋 위치`를 재조정할 뿐 브랜치의 HEAD 포인터까지 옮겨 주지는 않습니다.<br>
 리베이스한 후에는 이러한 병합 브랜치의 HEAD를 맞추어야 합니다.<br>
 > ※ 즉, 리베이스된 브랜치를 병합해야 합니다.<br>
+
+<br>
 
 병합을 위해 master 브랜치로 체크아웃합니다.<br>
 그리고 master 브랜치에서 merge 명령어를 실행합니다.
@@ -265,3 +272,38 @@ $ git merge description  # HEAD 포인터 조정(병합)
 
 >  1 file changed, 1 insertion(+)
 ```
+<kbd>**병합 후 소스트리 상태**<br>
+<img src="https://user-images.githubusercontent.com/45596014/199624049-75a9cc1b-5008-4130-913f-367b0c57374c.jpg">
+</kbd>
+
+> ※ 두 브랜치 HEAD가 동일한 커밋 위치를 가리키고 있습니다.
+
+<br>
+
+### **리베이스 후 실행한 병합 메시지**
+
+Fast-Forward 방식으로 병합했다는 것을 알 수 있습니다.
+
+HEAD 포인터의 위치만 생각해 보면 master 브랜치는 추가 커밋이 없는 상태입니다.
+
+그리고 리베이스한 브랜치에만 커밋이 진행된 것처럼 보입니다.
+
+즉, 리베이스한 후 HEAD 포인터의 위치 모양은 Fast-Forward 병합을 실습할 때와 같은 형태입니다.
+
+리베이스는 커밋을 재배치만 할 뿐 실제 병합과 같은 최종 상태는 가지지 않습니다. 
+
+즉, 리베이스한 후에도 HEAD 포인터를 일치하기 위해 Fast-Forward 병합을 실행해 주어야 합니다.
+
+두 브랜치의 HEAD를 일치시키는 작업까지 해야 최종 병합을 완성할 수 있습니다.
+
+리베이스 및 병합 작업까지 했다면 필요 없는 브랜치는 삭제합시다.
+> ※ 이처럼 리베이스하게 되면 복잡한 트리 모양의 구조가 아니라 선형 구조로 브랜치를 변경할 수 있습니다
+```bash
+infoh@DESKTOP MINGW64 /e/gitsudy08 (master)
+$ git branch -d description
+> Deleted branch description (was 48caea0).
+```
+
+<br>
+
+## **:boom: 리베이스 충돌과 해결**
