@@ -125,7 +125,7 @@ $ git rebase [브랜치]
     <kbd>
     <img width="300" src="https://user-images.githubusercontent.com/45596014/199483231-f145f01b-c3ef-48e2-8fb2-ec5f543b40db.jpg">
     </kbd>
-4. **소스트리를 통한 결과 확인**<
+4. **소스트리를 통한 결과 확인**<br>
     <kbd>
     <img src="https://user-images.githubusercontent.com/45596014/199479109-42a1b25e-d2a2-4b06-96d3-17c75aff9c66.jpg">
     </kbd>
