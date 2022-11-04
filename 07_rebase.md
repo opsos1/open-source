@@ -196,31 +196,18 @@ infoh@DESKTOP MINGW64 /e/gitstudy08 (description)
 $ git log -3 로그 확인
 
 > commit 48caea016f0e330cfc1dfcd587996fa9a32042fd (HEAD -> description)
-
 > Author: hojin <infohojin@gmail.com>
-
 > Date:   Sat May 18 17:27:09 2019 +0900
-
     add description
-
  
-
 > commit a7fe40bb622f6c8af0b1f25b0d86ea96c7896c50 (master)
-
 > Author: hojin <infohojin@gmail.com>
-
 > Date:   Sat May 18 17:28:59 2019 +0900
-
 >     add menu6
-
  
-
 > commit 8959f0cca024504cfe321adf440c9c888f8e4693
-
 > Author: hojin <infohojin@gmail.com>
-
 > Date:   Sat May 18 17:28:29 2019 +0900
-
 >     add menu5
 ```
 ### **바뀐 점**
