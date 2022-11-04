@@ -125,7 +125,7 @@ $ git rebase [브랜치]
     <kbd>
     <img width="300" src="https://user-images.githubusercontent.com/45596014/199483231-f145f01b-c3ef-48e2-8fb2-ec5f543b40db.jpg">
     </kbd>
-4. **소스트리를 통한 결과 확인**
+4. **소스트리를 통한 결과 확인**<
     <kbd>
     <img src="https://user-images.githubusercontent.com/45596014/199479109-42a1b25e-d2a2-4b06-96d3-17c75aff9c66.jpg">
     </kbd>
@@ -236,7 +236,7 @@ $ git log -3 로그 확인
 
 ### **리베이스 후 브랜치**
 리베이스 병합 이후 커밋은 정리되었지만, 브랜치 모양이 약간 다릅니다.<br>
-<kbd>**리베이스 후 브랜치의 마지막 커밋 위치**
+<kbd>**리베이스 후 브랜치의 마지막 커밋 위치**<br>
 <img src="https://user-images.githubusercontent.com/45596014/199490884-a03fed2b-8231-4cd1-8f6a-7c30935325d0.jpg">
 </kbd>
 
@@ -244,7 +244,7 @@ $ git log -3 로그 확인
 
 일반적으로 병합을 한 후 두 브랜치는 같은 커밋 ID를 가리킵니다.<br>
 하지만 소스트리에서 확인된 브랜치 위치는 서로 다릅니다.<br><br>
-<kbd>**브랜치의 HEAD 포인터**
+<kbd>**브랜치의 HEAD 포인터**<br>
 <img src="https://user-images.githubusercontent.com/45596014/199491203-8b19055c-1b75-4a5f-a242-b1459eab4a3d.jpg">
 </kbd>
 
@@ -263,13 +263,9 @@ $ git log -3 로그 확인
 
     infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
     $ git merge description  # HEAD 포인터 조정(병합)
-
     > Updating a7fe40b..48caea0
-
     > Fast-forward 병합 방식 확인
-
     >  index.htm | 1 +
-
     >  1 file changed, 1 insertion(+)
     ```
 <kbd>**병합 후 소스트리 상태**<br>
@@ -360,13 +356,13 @@ $ git checkout menu  # menu 브랜치로 이동
 
 infoh@DESKTOP MINGW64 /e/gitstudy08 (main)
 $ git rebase master
-First, rewinding head to replay your work on top of it...
-Applying: edit menu5
-Using index info to reconstruct a base tree...
-M       index.htm
-Falling back to patching base and 3-way merge…
-Auto-merging index.htm
-CONFLICT (content): Merge conflict in index.htm  # 충돌
+> First, rewinding head to replay your work on top of it...
+> Applying: edit menu5
+> Using index info to reconstruct a base tree...
+> M       index.htm
+> Falling back to patching base and 3-way merge…
+> Auto-merging index.htm
+> CONFLICT (content): Merge conflict in index.htm  # 충돌
 # 기타 에러 코드
 ```
 
@@ -406,9 +402,9 @@ $ git rebase --continue
     <kbd>
     <img src="https://user-images.githubusercontent.com/45596014/199634951-2ed5898e-c627-446a-98dc-0044bc61d6bf.png">
     </kbd>
-2. 수정
+2. 수정<br>
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/199635163-739e3e11-797f-482e-9d79-959d4bbf2d9b.jpg">
+    <img width="400" src="https://user-images.githubusercontent.com/45596014/199635163-739e3e11-797f-482e-9d79-959d4bbf2d9b.jpg">
     </kbd>
 3. 충돌 수정 적용
     ```bash
@@ -449,7 +445,7 @@ $ git merge menu  # 병합, HEAD 일치시키기
 
 infoh@DESKTOP MINGW64 /e/gitstudy08 (master)
 $ git branch -d menu  # menu 브랜치 삭제
-Deleted branch menu (was 690cc95).
+> Deleted branch menu (was 690cc95).
 ```
 
 <br>
@@ -493,7 +489,7 @@ rebase 명령어로 최종 커밋을 수정할 수 있습니다.
     git rebase -i HEAD~3  # vi editer 실행
     ```
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/199643845-7d01a1bd-72e4-4b59-b1e9-63655b94ec1d.png">
+    <img width="550" src="https://user-images.githubusercontent.com/45596014/199643845-7d01a1bd-72e4-4b59-b1e9-63655b94ec1d.png">
     </kbd>
 
     <br>
