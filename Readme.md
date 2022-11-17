@@ -49,7 +49,7 @@ $ code menu.htm # 파일 수정/저장을 위한 VS Code 실행
 ### **:pencil2: menu.htm 스테이징&커밋**
 실습을 위해 총 6번의 커밋을 진행합니다.<br>
 
-**첫 번째 커밋**
+**:one: 첫 번째 커밋**
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
 $ git add menu.htm  # 스테이징
