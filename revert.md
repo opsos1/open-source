@@ -27,7 +27,7 @@
 
     ```bash
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-    $ git commit -am "menu5" menu5 등록 및 커밋
+    $ git commit -am "menu5"  # menu5 등록 및 커밋
     > [master e19c0b4] menu5
     >  1 file changed, 1 insertion(+)
     ```
@@ -46,7 +46,7 @@
 
     ```bash
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-    $ git commit -am "menu6" menu6 등록 및 커밋
+    $ git commit -am "menu6"  # menu6 등록 및 커밋
     > [master 1ea5e47] menu6
     >  1 file changed, 1 insertion(+)
     ```
@@ -63,10 +63,10 @@
     <kbd>
     <img width="600" src="https://user-images.githubusercontent.com/45596014/202178341-33c24dad-0e3a-447f-a5cd-fd612ff5fb2f.jpg">
     </kbd>
-    
+
     ```bash
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-    $ git commit -am "menu7" menu7 등록 및 커밋
+    $ git commit -am "menu7"  # menu7 등록 및 커밋
     > [master 5374918] menu7
     >  1 file changed, 1 insertion(+)
     ```
