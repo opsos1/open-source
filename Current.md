@@ -103,7 +103,11 @@ Flux에 대한 강력한 확장으로, WGE(Weave GitOps Enterprise) 에서 개�
 
 <br><br>
 
-[이전 - 02_오픈소스의 역사](02_History.md)
+[이전 - 오픈소스의 역사](History.md)
+
+<br>
+
+[다음 - 자료출처](source.md)
 
 <br>
 
