@@ -7,7 +7,7 @@
 <img src="https://user-images.githubusercontent.com/45596014/202358888-d43619e0-230a-4974-aede-9f392ef7f2f1.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 ## **:triangular_flag_on_post: 복귀 시점**
 이전 코드로 복귀하려면 복귀 시점을 알려 주어야 합니다.<br>
