@@ -1,4 +1,4 @@
-## **:red_circle: 리셋**
+# **:red_circle: 리셋**
 `reset` 은 커밋을 기준으로 이전 코드로 되돌리는 방법으로,<br>
 기록한 커밋을 취소합니다.
 > ※ 커밋을 취소하는 만큼 리셋할 때는 항상 신중하게 작업해야 합니다.
@@ -7,13 +7,13 @@
 <img src="https://user-images.githubusercontent.com/45596014/202358888-d43619e0-230a-4974-aede-9f392ef7f2f1.jpg">
 </kbd>
 
-### **복귀 시점**
+## **:triangular_flag_on_post: 복귀 시점**
 이전 코드로 복귀하려면 복귀 시점을 알려 주어야 합니다.<br>
 `reset` 은 이 시점을 `commit` 을 기준으로 정합니다.<br>
 > ※ 커밋은 `log` 명령을 통해 해시 값을 조회할 수 있고,<br>
 > ※ 이는 복귀할 특정 시점을 찾는 데 매우 유용합니다.
 
-**로그 기록 확인**<br>
+### **로그 기록 확인**<br>
 - `reset` 을 사용하기 전 커밋의 해시 값을 확인해야합니다.<br>
 - 이때 `commit message` 는 특정 commit 시점을 파악하기에 매우 중요합니다.<br>
 
@@ -41,12 +41,12 @@ $ git log –oneline 로그 확인
 
 <br>
 
-### **:page_with_curl: reset 명령어**
+## **:page_with_curl: reset 명령어**
 `reset` 명령어 사용 시 특정 커밋의 해시 값 상태로 모든 코드를 복구합니다.<br>
 ```bash
 $ git reset [옵션] [커밋ID]
 ```
-**옵션**<br>
+### **옵션**<br>
 `reset` 명령어는 옵션을 함께 사용해야하며, 3가지 옵션이 있습니다.<br>
 > ※ 기본 옵션 값은 mixed입니다. <br>
 > ※ soft 옵션과 mixed 옵션 차이는 크게 스테이지 영역과 관련이 있습니다.<br>
@@ -54,6 +54,8 @@ $ git reset [옵션] [커밋ID]
 - **`soft`** : 스테이지 영역을 포함한 상태로 복원합니다.
 - **`mixed`** : reset 명령어를 사용할 때 옵션을 지정하지 않으면 기본값인 mixed로 선택됩니다.
 - **`hard`** : 실제 파일이 삭제된 이전 상태로 복원합니다.
+
+<br>
 
 ## **soft 옵션**
 soft 옵션은 가장 낮은 단계의 리셋 동작입니다.
@@ -186,7 +188,7 @@ $ git commit -m "menu5"  # 다시 커밋
 <img src="https://user-images.githubusercontent.com/45596014/202375647-c5663b88-281a-4713-a230-4fe281aa3af8.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 **log 확인**
 ```bash
@@ -199,6 +201,8 @@ $ git log –oneline 로그 확인
 > b741eef menu1
 > 69bf712 first
 ```
+
+<br>
 
 ## **:rainbow: mixed 옵션**
 `mixed` 옵션은 `reset` 의 기본 옵션입니다.
@@ -395,7 +399,7 @@ $ git status 상태 확인
 
 <br>
 
-## **소스트리**
+## **:evergreen_tree: 소스트리**
 리셋을 하기 위해 커밋 해시 값이 필요하며,<br>
 소스트리를 이용해 더 쉽게 리셋할 수 있습니다.
 
@@ -426,7 +430,7 @@ $ git status 상태 확인
 
 <br>
 
-## **커밋 합치기**
+## **:hamburger: 커밋 합치기**
 앞서 `rebase` 병합의 `-i` 옵션은 여러 커밋을 하나로 합치는 동작을 수행하고,<br>
 단일 커밋은 커밋 명령어의 `-amend` 옵션으로 수정할 수 있었습니다.
 
@@ -509,7 +513,7 @@ $ git diff HEAD~ 커밋 비교
 
 </details>
 
-**커밋 합치기**
+**커밋 합치기 실습**
 합친 커밋을 생성한 후 소스트리의 그래프를 확인하면, menu3과 menu4를 합친 커밋을 볼 수 있습니다.<br>
 > ※ menu3과 menu4는 커밋 2개를 합쳐 커밋 하나를 만든 것과 같습니다.
 ```bash
