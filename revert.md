@@ -128,7 +128,7 @@
     ```
 
 2. 범위 연산자를 지정해서 여러 커밋을 리버트할 수도 있습니다.
-    > ※ 연산자 ..를 같이 사용합니다.
+    > ※ 연산자 `..` 을 같이 사용합니다.
     ```bash
     $ git revert [commit ID] .. [commit ID]
     ```
@@ -141,10 +141,10 @@
 > ※ 알림창이 나오고, 리버트를 진행하려면 "예"를 누릅니다.
 
 <kbd>
-<img src="https://user-images.githubusercontent.com/45596014/202330424-aa2db6cb-6585-457c-9eac-1fe8b081c30c.jpeg">
+<img src="https://user-images.githubusercontent.com/45596014/202436371-137acfea-5395-4cf8-90d0-1388ea6104f8.jpg">
 </kbd>
 <kbd>
-<img src="https://user-images.githubusercontent.com/45596014/202330899-877c5a17-de7d-47cf-a2d8-9e92b632fbc3.jpeg">
+<img src="https://user-images.githubusercontent.com/45596014/202436511-6f79c24b-9452-41bb-af03-476427907348.jpg">
 </kbd>
 
 <br>
@@ -158,7 +158,7 @@
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
     $ git merge menu  # 병합
     > Auto-merging menu.htm
-    > Merge made by the ‘recursive’ strategy.
+    > Merge made by the 'recursive' strategy.
     >  menu.htm | 6 +++++-
     >  1 file changed, 5 insertions(+), 1 deletion(-)
     ```
@@ -174,7 +174,7 @@
     ```
     
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/202333839-00ec50f7-4799-4a3f-ade3-bcc12fb2db8e.jpg">
+    <img width="600" src="https://user-images.githubusercontent.com/45596014/202333839-00ec50f7-4799-4a3f-ade3-bcc12fb2db8e.jpg">
     </kbd>
 
 3. 소스트리를 통해 병합 커밋과 새로운 추가 커밋이<br>
@@ -200,7 +200,7 @@
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
     $ git log –oneline –graph
     > * da4d8e4 (HEAD -> master) menu7
-    > *   84b6618 Merge branch ‘menu’
+    > *   84b6618 Merge branch 'menu'
     > |\
     > | * 7f5fad8 (menu) menu1-1
     > * | 00d7770 Revert "menu7"
@@ -219,9 +219,9 @@
     
     ```bash
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-    $ git log –oneline –graph -5 로그 확인
+    $ git log –oneline –graph -5  # 로그 확인
     > * da4d8e4 (HEAD -> master) menu7
-    > *   84b6618 Merge branch ‘menu’
+    > *   84b6618 Merge branch 'menu'
     > |\
     > | * 7f5fad8 (menu) menu1-1
     > * | 00d7770 Revert “menu7”
@@ -234,7 +234,7 @@
     ```bash
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
     $ git revert –mainline 1 84b6618  # 리버트
-    > [master 4399642] Revert “Merge branch ‘menu’”
+    > [master 4399642] Revert “Merge branch 'menu'”
     >  1 file changed, 1 insertion(+), 5 deletions(-)
     ```
     
@@ -252,7 +252,7 @@
     그 이유는 리베이스로 병합된 공통 조상 커밋을 찾기 어렵기 때문입니다.
 
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/202355827-156b93f0-a0c7-49aa-bae2-cd2d841604fd.png">
+    <img width="600" src="https://user-images.githubusercontent.com/45596014/202355827-156b93f0-a0c7-49aa-bae2-cd2d841604fd.png">
     </kbd>
 
     </details>
