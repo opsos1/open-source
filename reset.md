@@ -39,7 +39,7 @@ $ git log –oneline 로그 확인
 <img src="https://user-images.githubusercontent.com/45596014/202359162-7b60545c-8d21-4ffa-89de-2fa89eb50e4e.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 ## **:page_with_curl: reset 명령어**
 `reset` 명령어 사용 시 특정 커밋의 해시 값 상태로 모든 코드를 복구합니다.<br>
@@ -171,8 +171,6 @@ $ git status  # 상태 확인
 
 </details>
 
-<br>
-
 ### **menu5 재 커밋**
 처음과 동일한 상태가 된 것을 확인할 수 있습니다.
 > ※ 새로 커밋을 했기 때문에 처음 커밋 해시 값과는 다른 것을 볼 수 있습니다.<br>
@@ -283,8 +281,6 @@ $ git diff HEAD 커밋 비교
 ```
 </details>
 
-<br>
-
 ### **menu5 재 커밋**
 다음 실습을 위해 다시 menu5를 등록하여 커밋합니다.
 > ※ mixed 실행 후 다시 커밋하려면 꼭 add 명령어를 실행해야합니다.
@@ -301,7 +297,7 @@ $ git commit -m "menu5"  # 커밋
 <img src="https://user-images.githubusercontent.com/45596014/202425451-42a60916-2b71-435c-b780-7a0a441ffbc4.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 ## **:wrench: hard 옵션**
 리셋되는 복귀 시점의 커밋 상태와 해당 커밋의 워킹 디렉터리까지 모두 되돌립니다.<br>
@@ -403,7 +399,7 @@ $ git status 상태 확인
 리셋을 하기 위해 커밋 해시 값이 필요하며,<br>
 소스트리를 이용해 더 쉽게 리셋할 수 있습니다.
 
-### **:evergreen_tree: 소스트리 사용**
+### **소스트리 사용**
 **:one:**<br>
 먼저 소스트리의 커밋 그래프에서 복귀할 커밋을 선택합니다.<br>
 그리고 마우스 오른쪽 버튼을 눌러 이 커밋까지 현재 브랜치를 초기화 메뉴를 선택합니다.
@@ -412,7 +408,7 @@ $ git status 상태 확인
 <img src="https://user-images.githubusercontent.com/45596014/202426298-b03f2658-710b-4714-9f54-5d5030097647.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 **:two:**<br>
 1번 실생 시 팝업창이 열립니다.<br>
@@ -428,7 +424,7 @@ $ git status 상태 확인
 <img src="https://user-images.githubusercontent.com/45596014/202426459-4beecce1-fa4b-4166-9893-1871d5fb41fa.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 ## **:hamburger: 커밋 합치기**
 앞서 `rebase` 병합의 `-i` 옵션은 여러 커밋을 하나로 합치는 동작을 수행하고,<br>
@@ -530,7 +526,7 @@ $ git commit -m "menu3/4"  # 커밋
 <img src="https://user-images.githubusercontent.com/45596014/202427967-c9ba3ae2-17f5-453c-b846-f08840ac279d.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 ## **:outbox_tray: 스테이지 리셋**
 스테이지 영역에서 등록된 파일을 다시 unstage 상태로 만들 때는<br>
@@ -560,7 +556,7 @@ $ git reset -hard HEAD
 <img src="https://user-images.githubusercontent.com/45596014/202428333-5874624a-6fbb-43fb-8437-b3f7f86892be.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 ## **:bomb: 병합 취소**
 리셋은 병합된 브랜치도 취소할 수 있습니다.<br>
@@ -648,6 +644,8 @@ $ git reset –merge HEAD~  # 이전 커밋 리셋
 <kbd>
 <img src="https://user-images.githubusercontent.com/45596014/201658920-976c3c1c-8c23-45da-b7e0-b583455553c4.jpeg">
 </kbd>
+
+<br>
 
 ## **:warning: 주의할 점**
 1. 리셋 기능을 통해 독립된 개인 프로젝트 관리 시 쉽게 이전 상태로 복귀할 수 있으나,<br>
