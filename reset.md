@@ -27,7 +27,7 @@
 
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-$ git log –oneline 로그 확인
+$ git log –oneline  # 로그 확인
 
 > 7f068b6 (HEAD -> master) menu5
 > 6619c99 menu4
@@ -188,12 +188,12 @@ $ git commit -m "menu5"  # 다시 커밋
 <img src="https://user-images.githubusercontent.com/45596014/202375647-c5663b88-281a-4713-a230-4fe281aa3af8.jpg">
 </kbd>
 
-<br><br>
+<br>
 
 **log 확인**
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-$ git log –oneline 로그 확인
+$ git log –oneline  # 로그 확인
 > 34df5c3 (HEAD -> master) menu5  # 커밋 해시 값이 변경됨
 > 6619c99 menu4
 > b728366 menu3
@@ -254,7 +254,7 @@ $ git status  # 상태 확인
 </summary>
 
 <kbd>
-<img src="https://user-images.githubusercontent.com/45596014/202371426-e0d31c5c-585a-4d56-bde4-84263cbe95d6.jpg">
+<img width="600" src="https://user-images.githubusercontent.com/45596014/202371426-e0d31c5c-585a-4d56-bde4-84263cbe95d6.jpg">
 </kbd>
 </details>
 <!----------------------------------------------------------->
@@ -268,7 +268,7 @@ $ git status  # 상태 확인
 새로운 menu5가 추가되었다고 나옵니다. 변경 파일 내용은 워킹 디렉터리에 저장되었습니다.
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-$ git diff HEAD 커밋 비교
+$ git diff HEAD  # 커밋 비교
 > diff –git a/menu.htm b/menu.htm
 > index f717854..9ae7cfc 100644
 > — a/menu.htm
@@ -323,7 +323,7 @@ $ git reset –hard HEAD~  # 완전 삭제
 **소스트리를 통한 확인**
 
 </summary>
-soft 옵션 리셋과 달리 ‘커밋하지 않은 변경 사항’이 없습니다.<br>
+soft 옵션 리셋과 달리 '커밋하지 않은 변경 사항'이 없습니다.<br>
 그리고 menu4로 HEAD 포인터가 변경되었습니다.
 
 <br>
@@ -343,7 +343,7 @@ soft 옵션 리셋과 달리 ‘커밋하지 않은 변경 사항’이 없습�
 
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-$ git log –oneline 로그 확인
+$ git log –oneline  # 로그 확인
 > 6619c99 (HEAD -> master) menu4
 > b728366 menu3
 > f1c704f menu2
@@ -385,10 +385,9 @@ $ git log –oneline 로그 확인
 
 워킹 디렉터리와 스테이지가 모두 비어 있는 깨끗한 상태입니다.
 
-`menu.htm`
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-$ git status 상태 확인
+$ git status  # 상태 확인
 > On branch master
 > nothing to commit, working tree clean
 ```
@@ -402,8 +401,7 @@ $ git status 상태 확인
 소스트리를 이용해 더 쉽게 리셋할 수 있습니다.
 
 ### **소스트리 사용**
-**:one:**<br>
-먼저 소스트리의 커밋 그래프에서 복귀할 커밋을 선택합니다.<br>
+**:one:** &nbsp;&nbsp;먼저 소스트리의 커밋 그래프에서 복귀할 커밋을 선택합니다.<br>
 그리고 마우스 오른쪽 버튼을 눌러 이 커밋까지 현재 브랜치를 초기화 메뉴를 선택합니다.
 
 <kbd>
@@ -412,8 +410,7 @@ $ git status 상태 확인
 
 <br><br>
 
-**:two:**<br>
-1번 실생 시 팝업창이 열립니다.<br>
+**:two:** &nbsp;&nbsp;1번 실생 시 팝업창이 열립니다.<br>
 앞에서 학습한 soft, mixed, hard 리셋 옵션을 선택할 수 있습니다.
 > ※ `hard` 옵션 선택 시 경고 메시지를 출력하며 진행 여부를 확인합니다.<br>
 > ※ 진행 시 `예`를 누릅니다.
@@ -475,10 +472,9 @@ $ git log –oneline  # 로그 확인
 
 워킹 디렉터리와 스테이지가 모두 비어 있는 깨끗한 상태입니다.
 
-`menu.htm`
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-$ git diff HEAD~ 커밋 비교
+$ git diff HEAD~  # 커밋 비교
 > diff –git a/menu.htm b/menu.htm
 > index d11d058..f717854 100644
 > — a/menu.htm
@@ -575,7 +571,7 @@ menu 브랜치로 체크아웃합니다.
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
 $ git checkout -b menu f1c704f  # menu2의 해시키를 직접 지정
-> Switched to a new branch ‘menu’
+> Switched to a new branch 'menu'
 ```
 
 만든 브랜치에서 menu.html 파일을 수정, 저장 후 커밋합니다.
@@ -590,7 +586,7 @@ $ code menu.htm  # VS code 실행
 
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (menu)
-$ git commit -am "menu1-1”
+$ git commit -am "menu1-1"
 > [menu 7f5fad8] menu1-1
 >  1 file changed, 5 insertions(+), 1 deletion(-)
 ```
@@ -612,8 +608,8 @@ menu 브랜치와 master 브랜치를 병합합니다.
 > ※ 다른 브랜치로 체크아웃되어 있다면 병합을 위해 먼저 master 브랜치로 체크아웃합니다.
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (menu)
-$ git checkout master 브랜치 이동
-> Switched to branch ‘master’
+$ git checkout master  # 브랜치 이동
+> Switched to branch 'master'
 ```
 
 <br>
@@ -625,9 +621,9 @@ merge 명령어를 실행하며,<br>
 
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
-$ git merge menu 병합
+$ git merge menu  # 병합
 > Auto-merging menu.htm
-> Merge made by the ‘recursive’ strategy.
+> Merge made by the 'recursive' strategy.
 >  menu.htm | 6 +++++-
 >  1 file changed, 5 insertions(+), 1 deletion(-)
 ```
