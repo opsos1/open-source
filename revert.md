@@ -22,7 +22,7 @@
 
     </summary>
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/202175340-0e9fc626-0624-457f-a455-28deca65d759.jpg">
+    <img width="600" src="https://user-images.githubusercontent.com/45596014/202175340-0e9fc626-0624-457f-a455-28deca65d759.jpg">
     </kbd>
 
     ```bash
@@ -40,7 +40,7 @@
 
     </summary>
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/202176487-854d183a-2ac5-4717-ad4f-43a31621a20b.jpg">
+    <img width="600" src="https://user-images.githubusercontent.com/45596014/202176487-854d183a-2ac5-4717-ad4f-43a31621a20b.jpg">
     </kbd>
     ```bash
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
@@ -59,7 +59,7 @@
 
     </summary>
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/202178341-33c24dad-0e3a-447f-a5cd-fd612ff5fb2f.jpg">
+    <img width="600" src="https://user-images.githubusercontent.com/45596014/202178341-33c24dad-0e3a-447f-a5cd-fd612ff5fb2f.jpg">
     </kbd>
     ```bash
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
@@ -85,8 +85,9 @@
     ```
 
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/202322930-83e96938-4fef-46fb-a29a-c7eb864d3ad2.png">
+    <img width="800" src="https://user-images.githubusercontent.com/45596014/202322930-83e96938-4fef-46fb-a29a-c7eb864d3ad2.png">
     </kbd>
+
     **2-1.** 메시지 저장 후 출력되는 메시지
     ```bash
     > [master 00d7770] Revert "menu7"
@@ -102,7 +103,7 @@
     menu7 가 담긴 \<li> 태그가 사라졌습니다.
 
     <kbd>
-    <img src="https://user-images.githubusercontent.com/45596014/202325173-cac69c22-6495-4369-bc8b-d2f0bcb550d1.png">
+    <img width="600" src="https://user-images.githubusercontent.com/45596014/202325173-cac69c22-6495-4369-bc8b-d2f0bcb550d1.png">
     </kbd>
 
     **3-2.** 소스트리 상태<br>
