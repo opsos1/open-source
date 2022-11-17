@@ -39,9 +39,11 @@
     **commit 2 (menu6)**
 
     </summary>
+
     <kbd>
     <img width="600" src="https://user-images.githubusercontent.com/45596014/202176487-854d183a-2ac5-4717-ad4f-43a31621a20b.jpg">
     </kbd>
+
     ```bash
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
     $ git commit -am "menu6" menu6 등록 및 커밋
@@ -61,6 +63,7 @@
     <kbd>
     <img width="600" src="https://user-images.githubusercontent.com/45596014/202178341-33c24dad-0e3a-447f-a5cd-fd612ff5fb2f.jpg">
     </kbd>
+    
     ```bash
     infoh@DESKTOP MINGW64 /e/gitstudy09 (master)
     $ git commit -am "menu7" menu7 등록 및 커밋
