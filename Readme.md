@@ -6,11 +6,9 @@
 <br>
 
 ## **:bookmark: 목차**
-### [**01. 되돌리기**](History.md)
+### [**02. 리셋(reset)**](reset.md)
 
-### [**02. 리셋(reset)**](Current.md)
-
-### [**03. 리버트(revert)**](source.md)
+### [**03. 리버트(revert)**](revert.md)
 
 <br>
 
