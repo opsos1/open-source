@@ -657,4 +657,4 @@ $ git reset –merge HEAD~  # 이전 커밋 리셋
 
 <br>
 
-[목차](README.md)
+[목차](Readme.md)
