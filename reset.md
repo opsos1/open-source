@@ -574,7 +574,7 @@ $ git checkout -b menu f1c704f  # menu2의 해시키를 직접 지정
 > Switched to a new branch 'menu'
 ```
 
-만든 브랜치에서 menu.html 파일을 수정, 저장 후 커밋합니다.
+만든 브랜치에서 menu.htm 파일을 수정, 저장 후 커밋합니다.
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy09 (menu)
 $ code menu.htm  # VS code 실행
