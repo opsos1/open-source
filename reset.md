@@ -7,6 +7,8 @@
 <img src="https://user-images.githubusercontent.com/45596014/202358888-d43619e0-230a-4974-aede-9f392ef7f2f1.jpg">
 </kbd>
 
+<br>
+
 ## **:triangular_flag_on_post: 복귀 시점**
 이전 코드로 복귀하려면 복귀 시점을 알려 주어야 합니다.<br>
 `reset` 은 이 시점을 `commit` 을 기준으로 정합니다.<br>
@@ -57,7 +59,7 @@ $ git reset [옵션] [커밋ID]
 
 <br>
 
-## **soft 옵션**
+## **:ghost: soft 옵션**
 soft 옵션은 가장 낮은 단계의 리셋 동작입니다.
 > ※ soft 옵션을 사용하면 별도의 메시지가 출력되지 않습니다.
 ```bash
