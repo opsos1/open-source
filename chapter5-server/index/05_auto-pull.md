@@ -120,12 +120,12 @@ $ git pull # 연결된 원격저장소 파일을 내 파일과 자동으로 병�
 
 <br>
 
-[이전으로 이동](/index/04_push.md)
+[이전 - 서버 전송](/index/04_push.md)
 
 <br>
 
-[다음으로 이동](/index/06_manual-fetch.md)
+[다음 - 수동으로 내려받기](/index/06_manual-fetch.md)
 
 <br>
 
-[목차로 이동](/README.md)
+[목차](/README.md)

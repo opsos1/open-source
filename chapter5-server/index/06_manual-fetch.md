@@ -31,12 +31,12 @@ $ git merge [원격저장소별칭/브랜치이름]
 
 <br>
 
-[이전으로 이동](/index/05_auto-pull.md)
+[이전 - 자동으로 내려받기](/index/05_auto-pull.md)
 
 <br>
 
-[다음으로 이동](/index/07_order.md)
+[다음 - 순서](/index/07_order.md)
 
 <br>
 
-[목차로 이동](/README.md)
+[목차](/README.md)

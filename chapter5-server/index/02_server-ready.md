@@ -66,7 +66,7 @@
 
 <br>
 
-[다음 - 깃허브 연동 및 원격 등록](/index/03_link-remote.md)
+[다음 - 연동 및 원격 등록](/index/03_link-remote.md)
 
 <br>
 

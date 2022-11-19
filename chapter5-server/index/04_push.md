@@ -29,12 +29,12 @@ $ git push [원격저장소 별칭] [브랜치 이름]
 
 <br>
 
-[이전으로 이동](/index/03_link-remote.md)
+[이전 - 연동 및 원격 등록](/index/03_link-remote.md)
 
 <br>
 
-[다음으로 이동](/index/05_auto-pull.md)
+[다음 - 자동으로 내려받기](/index/05_auto-pull.md)
 
 <br>
 
-[목차로 이동](/README.md)
+[목차](/README.md)

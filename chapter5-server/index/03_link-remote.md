@@ -168,12 +168,12 @@
 
 <br>
 
-[이전으로 이동](/index/02_server-ready.md)
+[이전 - 서버 준비](/index/02_server-ready.md)
 
 <br>
 
-[다음으로 이동](/index/04_push.md)
+[다음 - 서버 전송](/index/04_push.md)
 
 <br>
 
-[목차로 이동](/README.md)
+[목차](/README.md)
