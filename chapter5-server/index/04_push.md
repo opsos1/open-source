@@ -4,7 +4,7 @@
 <img width="300" src="https://user-images.githubusercontent.com/45596014/193266554-fd701048-c308-458d-987d-e24bfc889630.jpg">
 </kbd>
 
-## **push: 서버에 전송**
+## **:outbox_tray: push: 서버에 전송**
 ### push 명령을 사용해 원격저장소에 업로드할 수 있습니다.<br>
 
 ```bash
