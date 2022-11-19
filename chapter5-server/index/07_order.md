@@ -45,8 +45,8 @@
 
 <br>
 
-[이전 - 수동으로 내려받기](/index/06_manual-fetch.md)
+[이전 - 수동으로 내려받기](06_manual-fetch.md)
 
 <br>
 
-[목차](/README.md)
+[목차](../README.md)

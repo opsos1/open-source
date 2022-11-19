@@ -66,8 +66,8 @@
 
 <br>
 
-[다음 - 연동 및 원격 등록](/index/03_link-remote.md)
+[다음 - 연동 및 원격 등록](03_link-remote.md)
 
 <br>
 
-[목차](/README.md)
+[목차](../README.md)
