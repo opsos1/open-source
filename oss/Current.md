@@ -41,18 +41,180 @@
 <br>
 
 ## **:clipboard: 대표적 오픈소스 소프트웨어 현황**
-### **MySQL**
-  - 가장 인기있는 오픈소스(데이터베이스 시스템)입니다.
-  - 2008년 Sun Microsystem에 인수되고, 이를 오라클이 인수했습니다.
-  - 오라클에 인수됨에 따라 OSS 커뮤니티에 우려가 제기되었고,<br>
-      그에 따라 MariaDB와 같은 오픈소스 데이터베이스 시스템으로 전환하게 되었습니다.
-  - GPL 라이선스를 가지고 있습니다.
+
+### <img height="36px" src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=ffffff"/>
+**< 개발자 >**<br>
+[Microsoft](https://www.microsoft.com/)
+
+**< 개발 연혁 >**<br>
+2015.4.29.
+- 2015 빌드 컨퍼런스에서 처음 발표했습니다.
+
+2015.11.18.
+- VS code의 소스가 `MIT 라이선스`에 따라 릴리스되어<br>
+  `Github`에서 사용할 수 있게 되었습니다.
+  
+2016.4.15.
+- 정식판이 발표되었습니다.
+
+**< 특징 >**
+- 다양한 프로그래밍 언어와 함께 사용할 수 있는 소스 코드 편집기 입니다.
+  > ※ C, Java, JavaScript, Node.js, Go, Rust, Fortran 등 
+- [Electron](https://www.electronjs.org/) 프레임워크 를 기반으로 합니다.
+- 사용 데이터를 수집하여 Microsoft로 보냅니다.
+  > ※ 이는 비활성화할 수 있습니다.
+- 오픈소스 특성 상 원격 측정 코드는 수집된 내용을 누구든지 정확히 액세스할 수 있습니다.
+- 현재 인기있는 개발 도구 설문조사에서 1위를 차지하고 있습니다.
+
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/202838774-43bc6a6e-0ec4-4640-ad26-1abb5c6b4823.png">
+</kbd>
+
+<br><br>
+
+### <img height="36px" src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=ffffff"/>
+**< 개발자 >**<br>
+[Meta - Jordan Walke](https://about.meta.com/)
+
+**< 개발 연혁 >**<br>
+2011.
+- React의 초기 프로토타입인 [FaxJS](https://github.com/jordwalke/FaxJs) 를 만들어 Facebook에 검색 요소를 제공했습니다.
+2012.
+- Facebook이 Instagram 을 인수하면서 Instagram에서 사용하게됩니다.
+
+2013.05.
+- ReactJS를 오픈소스로 공개했습니다.
+  
+2017.09.
+- React 16.0이 `MIT 라이선스` 로 공개되었습니다.
+  
+2020.08.
+- React v17.0의 첫 번째 릴리스 후보를 발표했습니다.
+  
+2022.03.
+- 새로운 동시 렌더러, 자동 일괄 처리 및 Suspense를 통한<br>
+  서버 측 렌더링 지원을 도입한 React 18이 출시되었습니다.
+
+**< 특징 >**<br>
+- 2013년 5월 최초 공개된 릴리스는 `Apache License 2.0` 입니다.
+- 2014년 10월 React 0.12.0은 이를 3개 조항의 `BSD License` 로 대체하고<br>
+  소프트웨어와 관련된 모든 Facebook 특허 사용을 허용하는 별도의 `PATENTS(특허)` 텍스트 파일을 추가했습니다. 
+- 위 `BSD License`의 파격적인 조항은 React 사용자 커뮤니티에서 약간의 논란과 논쟁을 불러일으켰습니다.<br>
+  그로 인해 2015년 4월 특허 부여를 덜 모호하고 더 허용하도록 업데이트 했습니다.
+- Apache Software Foundation 은 이 라이선스 계약이 라이선스 정책과 양립할 수 없다고 생각했습니다.<br>
+    <details><summary>이유</summary>
+  라이선스가 아닌 라이선스 제공자에게 유리하게 불균형한 소프트웨어의 하위 소비자에게<br>
+  위험을 전가하여 보편적 기증자라는 Apache 법적 정책을 위반하기 때문입니다.
+  </details>
+- 이런 이유에서 2017년에 `BSD License + PATENTS`를 버리고, `MIT License`로 릴리스하게 됩니다.
+
+<kbd>
+<img src="https://user-images.githubusercontent.com/45596014/202849297-efc45984-d9d1-4d99-9454-60ac58940d6f.png">
+</kbd>
+
+<br>
+
+### <img height="36px" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=ffffff"/>
+**< 개발자 >**<br>
+Google Brain Team
+
+**< 개발 연혁>**<br>
+2015.
+- Google은 TensorFlow를 `Apache License 2.0` 로 출시했습니다.
+  
+2017.12.
+- Google, Cisco, RedHat, CoreOS 및 CaiCloud의 개발자들이 컨퍼런스에서 Kubeflow를 소개 했습니다.<br>
+  Kubeflow는 Kubernetes 에서 TensorFlow의 운영 및 배포를 허용합니다 .
+
+2018.03.
+- Google은 JavaScript 로 기계 학습을 위한 `TensorFlow.js` 버전 1.0을 발표했습니다.
+  
+2019.01
+- Google은 TensorFlow 2.0을 발표했습니다.
+  > 2019년 9월에 공식적으로 사용할 수 있게 되었습니다.
+
+2019.05
+- Google은 컴퓨터 그래픽의 딥 러닝을 위한 `TensorFlow Graphics`를 발표했습니다.
+
+**< 특징 >**
+- TensorFlow 는 기계 학습 및 인공지능 을 위한 `무료 오픈 소스 소프트웨어 라이브러리` 입니다.
+- 도구 , 라이브러리 및 커뮤니티 리소스의 포괄적이고 유연한 에코시스템이 있어<br>
+  연구원은 최신 `ML(Machine Learning)`을 추진하고 개발자는 `ML` 기반 애플리케이션을 쉽게 구축 및 배포할 수 있습니다.
+- 안정적인 Python 및 C++ API뿐만 아니라 다른 언어 에 대한 이전 버전과의 호환이 보장되지 않는 API를 제공합니다.
+
+<br>
+
+<img height="36px" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=ffffff"/>
+
+**< 개발자 >**<br>
+[Meta AI](https://ai.facebook.com/)
+
+**< 개발 연혁 >**<br>
+2016.09.01.
+- 처음으로 공개되었습니다.
+
+2017.09.
+- [ONNX (Open Neural Network Exchange)](https://onnx.ai/) 프로젝트는 프레임워크 간 모델 변환을 위해<br>
+  Meta와 Microsoft 에서 만들었습니다.
+  > ※ 혁신과 협업을 촉진하기 위해 기계 학습 알고리즘 및 소프트웨어 도구를 나타내는<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;공개 표준을 설정하는 기술 회사 및 연구 기관의 `오픈 소스 인공 지능` 생태계 입니다.
+
+2018.03
+- [Caffe2](https://caffe2.ai/)는 PyTorch에 합병되었습니다.
+    > ※ 버클리 캘리포니아 대학에서 개발된 `딥 러닝 프레임워크`입니다.<br>
+    > ※ 이는 BSD 라이선스에 따른 오픈소스 입니다.
+
+2022.09.
+- Meta는 PyTorch 가 [Linux Foundation](https://training.linuxfoundation.org/?SSAID=1461860&sscid=b1k6_lsdz9) 의 자회사인<br>
+  새로 만들어진 독립 조직인 [PyTorch Foundation](https://pytorch.org/foundation)에 의해 관리될 것이라고 발표했습니다 .
+
+**< 특징 >**
+- Torch 라이브러리를 기반으로 하는 머신 러닝 프레임워크로,<br>
+  `컴퓨터 비전` 및 `자연어 처리` 와 같은 애플리케이션에 사용됩니다.
+- 원래 [Meta AI](https://ai.facebook.com/)에서 개발했으나 현재 [Linux Foundation](https://training.linuxfoundation.org/?SSAID=1461860&sscid=b1k6_lsdz9)에 의해 관리되고 있습니다.
+- `BSD License`에 따라 배포되는 `무료 오픈 소스 소프트웨어` 입니다.
+- 두 가지 고급 기능을 제공합니다.
+    - 그래픽 처리 장치 (GPU) 를 통해 강력한 가속 기능을 갖춘 Tensor 컴퓨팅(예: NumPy)<br>
+  - 테이프 기반 자동 차별화 시스템 에 구축된 심층 신경망
+
+<br>
+
+### <img height="36px" src="https://img.shields.io/badge/MySql-4479A1?style=for-the-badge&logo=MySql&logoColor=ffffff"/>
+**< 개발자 >**<br>
+[MySQL AB](https://www.mysql.com/)
+
+**< 개발 연혁 >**
+1995.05.23.
+- 최초 내부 릴리스
+  
+1998.01.08
+- Windows 95 및 NT용으로 출시
+  
+2008.
+- `Sun Microsystems` 에서 `MySQL AB`를 인수
+
+2010.01.27
+- [Oracle](https://www.oracle.com/) 에서 `Sun Microsysystems` 를 인수
+- Michael Widenius 는 MySQL을 포크(fork)하여 [MariaDB](https://mariadb.org/)를 시작하고<br>
+  많은 MySQL 개발자를 데려왔습니다.
+
+**< 특징 >**
+
+- 가장 인기있는 오픈소스(데이터베이스 시스템)입니다.
+- 오라클에 인수됨에 따라 OSS 커뮤니티에 우려가 제기되었고,<br>
+    그에 따라 MariaDB와 같은 오픈소스 데이터베이스 시스템으로 전환하게 되었습니다.
+- GPL 라이선스를 가지고 있습니다.
 
 <kbd>
 <img height="150" src="https://user-images.githubusercontent.com/45596014/193505455-76858a35-dfca-46c6-8107-25fabf3dd495.png">
 </kbd>
 
-### **안드로이드 (Android)**
+<br>
+
+### <img height="36px" src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=Android&logoColor=ffffff"/>
+**< 개발자 >**<br>
+Google
+
 2008년 구글은 스마트폰 운영체제인 안드로이드 첫 버전을 오픈소스로 출시했습니다.
 - Android Inc.를 구글이 인수하여 구글의 이름으로 출시되었습니다.
 - [Apache 2.0](https://source.android.com/docs/setup/about/licenses) 라이선스를 가지고 있습니다.
@@ -63,7 +225,9 @@
 <img height="150" src="https://user-images.githubusercontent.com/45596014/193505380-9cb778bb-b838-4d87-8f6b-d8624f49d582.png">
 </kbd>
 
-### **크로미움 (Chromium)**<br>
+<br>
+
+### <img height="36px" src="https://img.shields.io/badge/Google Chrome-4285F4?style=for-the-badge&logo=Google Chrome&logoColor=ffffff"/>
 2008년 젠투 리눅스를 기반으로 만들어졌습니다.
 - 젠투 리눅스의 독자적인 운영체제 소스코드의 수정배포판이 크로미엄 OS 입니다.
 - 크로미엄 OS를 기반으로 한 OS에는 크롬OS, 웨일OS 가 있습니다.
@@ -77,7 +241,8 @@
 <br>
 
 ## **:newspaper: 최근 출시된 오픈소스 소프트웨어 현황**
-### **플루터 (Flutter)**
+
+### <img height="36px" src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=Flutter&logoColor=ffffff"/>
 2015년에 기술되었으며, 2017년에 Google에서 만든 오픈소스 개발도구 입니다.
 - [BSD 라이선스](https://github.com/flutter/flutter/blob/master/LICENSE)를 가지고 있습니다.
 
@@ -85,7 +250,9 @@
 <img height="150" src="https://user-images.githubusercontent.com/45596014/193505069-37302ca3-3017-4703-b0d2-a91dc2f35557.png">
 </kbd>
 
-### **윈도우 터미널 (Window Terminal)**
+<br>
+
+### <img height="36px" src="https://img.shields.io/badge/Windows Terminal-4D4D4D?style=for-the-badge&logo=Windows Terminal&logoColor=ffffff"/>
 2019년에 GitHub에 처음 기술되었으며, Microsoft 사에서 만든 소프트웨어입니다.
 - [MIT 라이선스](https://github.com/microsoft/terminal/blob/main/LICENSE)를 가지고 있습니다.
 
@@ -93,13 +260,6 @@
 <img height="150" src="https://user-images.githubusercontent.com/45596014/193505187-1e23ffc3-3ef8-4a59-ad01-f817154e3ce6.png">
 </kbd>
 
-### **위브 깃옵스 코어 (Weave GitOps Core)**
-Flux에 대한 강력한 확장으로, WGE(Weave GitOps Enterprise) 에서 개발한 소프트웨어입니다.
-- [MPL 라이선스](https://github.com/weaveworks/weave-gitops/blob/main/LICENSE)를 가지고 있습니다.
-
-<kbd>
-<img height="150" src="https://user-images.githubusercontent.com/45596014/193505250-ec888f6b-c4d3-4be6-bc5e-122b30428ef4.png">
-</kbd>
 
 <br><br>
 
