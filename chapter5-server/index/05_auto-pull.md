@@ -1,3 +1,9 @@
+[목록][목록] | [이전][이전] | [다음][다음]
+
+[목록]: ../README.md "목록"
+[이전]: 04_push.md "이전"
+[다음]: 06_manual-fetch.md "다음"
+
 # :electric_plug:**자동으로 내려받기**
     push와 반대로 원격저장소에서 로컬저장소로 받아오는 방식입니다.
 1. [복제(clone)](#clone-복제)
@@ -7,7 +13,7 @@
 
 <br>
 
-## **자동 병합**
+## **:video_game: 자동 병합**
 - ### 내려받은 커밋은 임시 영역에 저장합니다.
     >스테이지 영역이 아닌 원격저장소를 위한 전용 임시 브랜치가 있습니다.
 - ### 내려받은 최신 커밋들은 현재 브랜치로 자동 병합 처리합니다.
@@ -17,7 +23,7 @@
 
 <br>
 
-## **clone: 복제**
+## **:busts_in_silhouette: clone: 복제**
 ### 원격저장소 파일을 그대로 가져오는 방식입니다.
 ### **1. clone 받을 폴더로 이동**
 ```bash
@@ -118,14 +124,14 @@ $ git pull # 연결된 원격저장소 파일을 내 파일과 자동으로 병�
 <img src="https://user-images.githubusercontent.com/45596014/193399256-1f6bce1e-37d9-445d-9f05-c2e68e81573b.jpg">
 </kbd>
 
-<br>
+<br><br>
 
-[이전으로 이동](/index/04_push.md)
-
-<br>
-
-[다음으로 이동](/index/06_manual-fetch.md)
+[이전 - 서버 전송](04_push.md)
 
 <br>
 
-[목차로 이동](/README.md)
+[다음 - 수동으로 내려받기](06_manual-fetch.md)
+
+<br>
+
+[목차](../README.md)

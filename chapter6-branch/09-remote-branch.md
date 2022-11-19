@@ -1,8 +1,8 @@
 [목록][목록] | [이전][이전] | [다음][다음]
 
 [목록]: README.md "목록"
-[이전]: 6주차7-8.md "이전"
-[다음]: 10_branch-push.md "다음"
+[이전]: 0708-head-pointer-create-move.md "이전"
+[다음]: 10-branch-push.md "다음"
 
 # **:iphone: 원격 브랜치**
 ```PROPERTIES
@@ -303,11 +303,11 @@ $ git branch -u origin/브랜치이름 # u 옵션 - [--set-upstream-to]의 약�
 
 <br><br>
 
-[생성과 이동](6주차7-8.md)
+[이전 - HEAD 포인터 & 생성과 이동](0708-head-pointer-create-move.md)
 
 <br>
 
-[다음 - 브랜치 전송](10_branch-push.md)
+[다음 - 브랜치 전송](10-branch-push.md)
 
 <br>
 

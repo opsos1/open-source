@@ -1,10 +1,16 @@
+[목록][목록] | [이전][이전] | [다음][다음]
+
+[목록]: ../README.md "목록"
+[이전]: 03_link-remote.md "이전"
+[다음]: 05_auto-pull.md "다음"
+
 # :postbox:**서버 전송**
     서버와 연결했다면 PC에서 작업한 파일을 서버로 업로드할 수 있습니다.
 <kbd>
 <img width="300" src="https://user-images.githubusercontent.com/45596014/193266554-fd701048-c308-458d-987d-e24bfc889630.jpg">
 </kbd>
 
-## **push: 서버에 전송**
+## **:outbox_tray: push: 서버에 전송**
 ### push 명령을 사용해 원격저장소에 업로드할 수 있습니다.<br>
 
 ```bash
@@ -27,14 +33,14 @@ $ git push [원격저장소 별칭] [브랜치 이름]
 <img width="600" src="https://user-images.githubusercontent.com/45596014/193267641-1ba54059-7cef-4f9a-8c3c-29114ec6ca40.jpg">
 </kbd>
 
-<br>
+<br><br>
 
-[이전으로 이동](/index/03_link-remote.md)
-
-<br>
-
-[다음으로 이동](/index/05_auto-pull.md)
+[이전 - 연동 및 원격 등록](03_link-remote.md)
 
 <br>
 
-[목차로 이동](/README.md)
+[다음 - 자동으로 내려받기](05_auto-pull.md)
+
+<br>
+
+[목차](../README.md)

@@ -1,8 +1,8 @@
 [목록][목록] | [이전][이전] | [다음][다음]
 
 [목록]: README.md "목록"
-[이전]: 6-5,6.md "이전"
-[다음]: 09_remote-branch.md "다음"
+[이전]: 0506-move-space.md "이전"
+[다음]: 09-remote-branch.md "다음"
 
 # **:star: HEAD 포인터**
 
@@ -163,11 +163,11 @@ $ git checkout main # main 브랜치로 복귀
 
 <br><br>
 
-[이전 - 브랜치 이동 및 공간](6-5,6.md)
+[이전 - 브랜치 이동 및 공간](0506-move-space.md)
 
 <br>
 
-[다음 - 원격 브랜치](09_remote-branch.md)
+[다음 - 원격 브랜치](09-remote-branch.md)
 
 <br>
 

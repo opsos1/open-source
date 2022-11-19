@@ -1,7 +1,7 @@
 [목록][목록] | [이전][이전]
 
 [목록]: README.md "목록"
-[이전]: 10_branch-push.md "이전"
+[이전]: 10-branch-push.md "이전"
 
 # **:wastebasket: 브랜치 삭제**
 ```PROPERTIES
@@ -85,7 +85,7 @@ $ git push origin --delete [리모트브랜치이름]
 
 <br><br>
 
-[이전 - 브랜치 전송](10_branch-push.md)
+[이전 - 브랜치 전송](10-branch-push.md)
 
 <br>
 

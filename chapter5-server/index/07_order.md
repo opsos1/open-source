@@ -1,8 +1,13 @@
-# :airplane:순서
+[목록][목록] | [이전][이전]
+
+[목록]: ../README.md "목록"
+[이전]: 06_manual-fetch.md "이전"
+
+# **:airplane: 순서**
     원격저장소에 다수 개발자가 동시에 commit를 push 할 수 없습니다.
     순차적으로 push 해야합니다.
 
-## **최신 상태**
+## **:droplet: 최신 상태**
 - push를 할 때 로컬저장소를 항상 원격저장소 보다 최신 상태로 유지해야 합니다.<br>
 
         A와 B가 같은 커밋 상태의 파일을 작업 후 A가 먼저 commit & push를 한 경우
@@ -15,7 +20,7 @@
 
 <br>
 
-## **최신 상태**
+## **:newspaper: 최신 상태**
 - 깃이 최신 상태에서만 푸시를 허용하는 것은 충돌을 방지하기 위해서입니다.
 - 각 개발자들이 다른 영역을 동시에 작업했다면 충돌이 없었을 수 있지만<br>
     같은 영역을 수정한 경우 풀 작업을 할 때 무조건 충돌이 발생합니다.
@@ -43,10 +48,10 @@
         url = https://github.com/opsos1/server_summary.git
         fetch = +refs/heads/*:refs/remotes/origin/*
 
+<br><br>
+
+[이전 - 수동으로 내려받기](06_manual-fetch.md)
+
 <br>
 
-[이전으로 이동](/index/06_manual-fetch.md)
-
-<br>
-
-[목차로 이동](/README.md)
+[목차](../README.md)
