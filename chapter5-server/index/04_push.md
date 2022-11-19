@@ -2,7 +2,7 @@
 
 [목록]: ../README.md "목록"
 [이전]: 03_link-remote.md "이전"
-[다음]: 05_auto-pull.m "다음"
+[다음]: 05_auto-pull.md "다음"
 
 # :postbox:**서버 전송**
     서버와 연결했다면 PC에서 작업한 파일을 서버로 업로드할 수 있습니다.
