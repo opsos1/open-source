@@ -124,7 +124,7 @@ $ git pull # 연결된 원격저장소 파일을 내 파일과 자동으로 병�
 <img src="https://user-images.githubusercontent.com/45596014/193399256-1f6bce1e-37d9-445d-9f05-c2e68e81573b.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 [이전 - 서버 전송](04_push.md)
 

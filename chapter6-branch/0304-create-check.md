@@ -1,9 +1,9 @@
 [목록][목록] | [다음][다음]
 
 [목록]: README.md "목록"
-[다음]: 6-5,6.md "다음"
+[다음]: 0506-move-space.md "다음"
 
-#  :file_folder: 브랜치 생성
+#  **:file_folder: 브랜치 생성**
  - 브랜치는 가상의 작업 폴더입니다. 처음 깃을 초기화할 때 워킹 디렉터리는 master 브랜치를 생성합니다. <br>
  - 브랜치는 공통된 커밋을 가리키는 지점입니다.
    > 특정 커밋을 가리키는 별칭을 만드는것 -> 브랜치 <br>
@@ -17,7 +17,7 @@
  - 브랜치 이름만 입력하면 현재 HEAD 포인터를 기준으로 생성하고 커밋 ID 인자 값을 지정하면, 지정한 커밋 ID를 기준으로 브랜치를 생성합니다. <br>
  ![image](https://user-images.githubusercontent.com/105197536/194741657-91d7aa0a-17ed-4c66-94d4-a538f326e96d.png) <br>
  
- ## :computer: 실습해보기 
+ ## **:computer: 실습해보기**
  저장소에 새로운 파일을 하나 생성한 후 저장합니다.
  ```bash
  infoh@DESKTOP MINGW64 /e/gitstudy06 (master)
@@ -38,9 +38,11 @@ $ git commit -m "first" # 커밋 작성
 > 1 file changed, 1 insertion(+)
 > create mode 100644 branch.htm
 ```
+
  코드를 저장하고 커밋을 하나 추가했습니다.
  <br><br>
  커밋이 있는 상태에서 새로운 브랜치를 생성합니다. 마지막 커밋ID(100644)를 기준으로 브랜치를 생성 및 추가합니다.
+
  ```bash
  infoh@DESKTOP MINGW64 /e/gitstudy06 (master)
 $ git branch footer
@@ -105,7 +107,7 @@ branch 명령어만 입력하면 됩니다. branch 명령어는 단독으로도 
 ```bash
 $ git branch
 ```
-### 전체목록
+### **전체목록**
 현재 브랜치 목록을 확인해 볼까요? <br> 
 git branch 명령어를 실행하면 현재 모든 브랜치가 나열됩니다. <br>
 * 표시가 된 브랜치는 현재 선택된 브랜치입니다. <br>
@@ -118,14 +120,14 @@ $ git branch
 ```
 생성된 전체 브랜치 목록을 출력합니다.
 
-## :pushpin: 브랜치 해시
+## **:pushpin: 브랜치 해시**
 브랜치는 특정한 커밋의 해시 값(SHA1)을 가리킵니다. <br>
 깃의 저수준 명령어인 rev-parse를 사용하면 현재 브랜치가 어떤 커밋 해시 값(SHA1)을 가리키는지 확인할 수 있습니다. <br>
 ```
 $ git rev-parse 브랜치이름
 ```
 
-### 커밋 관계
+### **커밋 관계**
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy06 (feature)
 $ git log
@@ -136,7 +138,7 @@ $ git log
 ```
 로그에서 커밋의 d84766c7f87b1d9d234050949c48681ba4e35da8 해시 값(SHA1)을 확인할 수 있습니다. <br>
 
-### 브랜치 커밋
+### **브랜치 커밋**
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy06 (feature)
 $ git rev-parse feature
@@ -145,11 +147,11 @@ $ git rev-parse feature
 브랜치의 해시 값과 브랜치를 생성한 기준 커밋의 해시 값이 동일합니다. <br>
 브랜치가 커밋의 해시를 기준으로 생성된다는 것을 다시 한 번 알 수 있습니다. <br>
 
-## :bookmark_tabs: 브랜치 세부 사항 확인
+## **:bookmark_tabs: 브랜치 세부 사항 확인**
 기본적인 branch 명령어는 간단한 브랜치 이름만 출력합니다. <br>
 하지만 옵션을 사용하면 좀 더 상세한 브랜치 정보를 얻을 수 있습니다. <br>
 
-### --verbose 옵션
+### **--verbose 옵션**
 branch 명령어 뒤에 -v 또는 --verbose 옵션을 함께 사용하면 브랜치 이름, 커밋 ID, 커밋 메시지를 같이 볼 수 있습니다. <br>
 ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy06 (feature)
@@ -159,12 +161,12 @@ $ git branch -v # 또는 --verbose
 >   master  d84766c first
 ```
 
-### -help 옵션
+### **-help 옵션**
 branch 명령어 뒤에 -help 옵션을 추가하면 자세한 사용법을 볼 수 있습니다.
 
 <br><br>
 
-[다음 - 브랜치 이동 및 공간](6-5,6.md)
+[다음 - 브랜치 이동 및 공간](0506-move-space.md)
 
 <br>
 

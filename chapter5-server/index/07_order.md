@@ -48,7 +48,7 @@
         url = https://github.com/opsos1/server_summary.git
         fetch = +refs/heads/*:refs/remotes/origin/*
 
-<br>
+<br><br>
 
 [이전 - 수동으로 내려받기](06_manual-fetch.md)
 

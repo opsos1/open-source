@@ -69,7 +69,7 @@
 <img src="https://user-images.githubusercontent.com/45596014/193056984-f8d08228-1f84-42cc-a7b4-d6e7de1e7444.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 [다음 - 연동 및 원격 등록](03_link-remote.md)
 

@@ -1,8 +1,8 @@
 [목록][목록] | [이전][이전] | [다음][다음]
 
 [목록]: README.md "목록"
-[이전]: 6-3,6-4정리.md "이전"
-[다음]: 6주차7-8.md "다음"
+[이전]: 0304-create-check.md "이전"
+[다음]: 0708-head-pointer-create-move.md "다음"
 
 # **:arrow_right: 브랜치 이동**
 
@@ -96,11 +96,11 @@ $ git log –graph –all
 
 <br><br>
 
-[이전 - 브랜치 생성 및 확인](6-3,6-4정리.md)
+[이전 - 브랜치 생성 및 확인](0304-create-check.md)
 
 <br>
 
-[다음 - HEAD 포인터 & 생성과 이동](6주차7-8.md)
+[다음 - HEAD 포인터 & 생성과 이동](0708-head-pointer-create-move.md)
 
 <br>
 

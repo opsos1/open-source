@@ -172,7 +172,7 @@
 > ※ 삭제한 별칭의 fetch와 push 모두 삭제된 것을 확인할 수 있습니다.<br>
 > ※ $ git remote -v 로 확인한 상태 결과입니다.
 
-<br>
+<br><br>
 
 [이전 - 서버 준비](02_server-ready.md)
 

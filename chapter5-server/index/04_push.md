@@ -33,7 +33,7 @@ $ git push [원격저장소 별칭] [브랜치 이름]
 <img width="600" src="https://user-images.githubusercontent.com/45596014/193267641-1ba54059-7cef-4f9a-8c3c-29114ec6ca40.jpg">
 </kbd>
 
-<br>
+<br><br>
 
 [이전 - 연동 및 원격 등록](03_link-remote.md)
 

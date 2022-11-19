@@ -1,3 +1,9 @@
+[목록][목록] | [이전][이전] | [다음][다음]
+
+[목록]: README.md "목록"
+[이전]: 04-remove-branch.md "이전"
+[다음]: 06-merge-or-not.md "다음"
+
 # **충돌**
 
 <br>
@@ -5,11 +11,11 @@
 ## **실습을 위한 충돌 만들기**
 
 ```bash
-infoh@DESKTOP MINGW64 /e/gitstudy08 (master)-----기준 브랜치
-$ git checkout -b footer-----기준에서 새로운 브랜치 파생
+infoh@DESKTOP MINGW64 /e/gitstudy08 (master)  # 기준 브랜치
+$ git checkout -b footer  # 기준에서 새로운 브랜치 파생
 Switched to a new branch 'footer'
 ```
-독립된 footer 브랜치에서 index.htm 파일의 <footer>~</footer> 
+독립된 footer 브랜치에서 index.htm 파일의 \<footer>~\</footer><br> 
 부분 코드를 수정하고 커밋하겠습니다.
 
 카피라이터 부분을 두 줄로 수정하고 이어서 커밋합니다.
@@ -21,8 +27,8 @@ $ git commit -am "edit footer" -----등록된 커밋
  1 file changed, 1 insertion(+)
  ```
  
- 다시 master 브랜치로 체크아웃하여 index.htm 파일을 수정합니다. **충돌이 발생하도록
- 동일한 위치의 내용을 수정하고 커밋**하겠습니다.
+ 다시 master 브랜치로 체크아웃하여 index.htm 파일을 수정합니다.<br>
+ **충돌이 발생하도록 동일한 위치의 내용을 수정하고 커밋**하겠습니다.
  
  ```bash
 infoh@DESKTOP MINGW64 /e/gitstudy08 (footer)
@@ -102,3 +108,15 @@ $ git ls-files -u
 
 충돌을 해결한 후 병합 커밋을 직접 만들어야 합니다.
 병합 커밋을 생성하면 깃의 충돌 마크는 자동으로 없어집니다.
+
+<br><br>
+
+[이전 - 브랜치 삭제](04-remove-branch.md)
+
+<br>
+
+[다음 - 브랜치 병합 여부 확인](06-merge-or-not.md)
+
+<br>
+
+[목록](README.md)

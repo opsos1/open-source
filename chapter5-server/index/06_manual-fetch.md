@@ -35,7 +35,7 @@ $ git fetch [원격저장소URL]
 $ git merge [원격저장소별칭/브랜치이름]
 ```
 
-<br>
+<br><br>
 
 [이전 - 자동으로 내려받기](05_auto-pull.md)
 

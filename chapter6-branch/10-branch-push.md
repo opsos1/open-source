@@ -1,8 +1,8 @@
 [목록][목록] | [이전][이전] | [다음][다음]
 
 [목록]: README.md "목록"
-[이전]: 09_remote-branch.md "이전"
-[다음]: 11_branch-remove.md "다음"
+[이전]: 09-remote-branch.md "이전"
+[다음]: 11-branch-remove.md "다음"
 
 # **:outbox_tray: 브랜치 전송**
 ```PROPERTIES
@@ -67,11 +67,11 @@ $ git checkout -b [임시브랜치이름] [origin/브랜치이름] # [임시브�
 
 <br><br>
 
-[이전 - 원격 브랜치](09_remote-branch.md)
+[이전 - 원격 브랜치](09-remote-branch.md)
 
 <br>
 
-[다음 - 브랜치 삭제](11_branch-remove.md)
+[다음 - 브랜치 삭제](11-branch-remove.md)
 
 <br>
 
