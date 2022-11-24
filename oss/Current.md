@@ -42,6 +42,12 @@
 
 ## **:clipboard: 대표적 오픈소스 소프트웨어 현황**
 
+<img height="36px" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=Linux&logoColor=ffffff"/>
+
+[리눅스 정리 페이지 이동 > ](../History.md/)
+
+<br><br>
+
 ### <img height="36px" src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=ffffff"/>
 **< 개발자 >**<br>
 [Microsoft](https://www.microsoft.com/)
@@ -79,6 +85,7 @@
 **< 개발 연혁 >**<br>
 2011.
 - React의 초기 프로토타입인 [FaxJS](https://github.com/jordwalke/FaxJs) 를 만들어 Facebook에 검색 요소를 제공했습니다.
+- 
 2012.
 - Facebook이 Instagram 을 인수하면서 Instagram에서 사용하게됩니다.
 
