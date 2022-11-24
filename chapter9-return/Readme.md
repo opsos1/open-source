@@ -6,8 +6,8 @@
 <br>
 
 ## **:bookmark: 목차**
-### [**02. 리셋(reset)**](reset.md)
-### [**03. 리버트(revert)**](revert.md)
+### [**01. 리셋(reset)**](reset.md)
+### [**02. 리버트(revert)**](revert.md)
 
 <br>
 
