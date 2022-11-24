@@ -44,7 +44,7 @@
 
 <img height="36px" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=Linux&logoColor=ffffff"/>
 
-[리눅스 정리 페이지 이동 > ](../History.md)
+[오픈소스 역사 페이지에서 리눅스 확인 > ](History.md)
 
 <br><br>
 
