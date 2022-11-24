@@ -28,8 +28,8 @@
 
 
 ### **[9장 - 복귀(reset, revert)](/chapter9-return/)**
-02. 리셋(reset)
-03. 리버트(revert)
+01. 리셋(reset)
+02. 리버트(revert)
 
 
 ### **[OSS - OpenSourceSoftware](/chapter9-return/)**
